@@ -1,0 +1,301 @@
+/*
+
+ * HTML5 Boilerplate
+
+ *
+
+ * What follows is the result of much research on cross-browser styling.
+
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+
+ * Kroc Camen, and the H5BP dev community and team.
+
+ */
+
+/* ==========================================================================
+
+   Base styles: opinionated defaults
+
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+
+  color: #000;
+
+}
+
+body {
+
+  font-size: 1em;
+  line-height: 1.4;
+  margin: 0;
+
+}
+
+::-moz-selection {
+
+  background: #b3d4fc;
+
+  text-shadow: none;
+
+}
+
+::selection {
+
+  background: #b3d4fc;
+
+  text-shadow: none;
+
+}
+
+hr {
+
+  display: block;
+
+  height: 1px;
+
+  border: 0;
+
+  border-top: 1px solid #ccc;
+
+  margin: 1em 0;
+
+  padding: 0;
+
+}
+
+img {
+
+  vertical-align: middle;
+
+}
+
+fieldset {
+
+  border: 0;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+textarea {
+
+  resize: vertical;
+
+}
+
+.tinynav {
+
+  display: none;
+
+}
+
+.chromeframe {
+
+  margin: 0.2em 0;
+
+  background: #ccc;
+
+  color: #000;
+
+  padding: 0.2em 0;
+
+}
+
+.nostyle {
+
+  /*list-style: none;*/
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+.text_right {
+
+  text-align: right;
+
+}
+
+.text_left {
+
+  text-align: left;
+
+}
+
+.text_center {
+
+  text-align: center;
+
+}
+
+.lines {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 40px !important;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.sub_title {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 0;
+    margin-bottom: -150px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    opacity: .5;
+}
+
+[class^='fa-'] {
+  font-family: 'FontAwesome';
+}
+
+.top_box,
+.bot_box {
+
+  width: 0px;
+
+  height: 0px;
+
+}
+
+.section2 .top_box, .section4 .top_box, .section6 .top_box, .section8 .top_box, .section10 .top_box, .section12 .top_box  {
+  border-width: 0 0 60px 2880px;
+  /*border-style: solid solid solid dashed;*/
+  border-style: solid solid solid solid;
+}
+
+.section3 .top_box, .section5 .top_box, .section7 .top_box, .section9 .top_box, .section11 .top_box {
+  border-width: 60px 0 0 2880px;
+  /*border-style: solid solid solid dashed;*/
+  border-style: solid solid solid solid;
+}
+
+.section2 .bot_box, .section4 .bot_box, .section6 .bot_box, .section8 .bot_box, .section10 .bot_box, .section12 .bot_box {
+  border-width: 0 2880px 60px 0;
+  /*border-style: solid dashed solid solid;*/
+  border-style: solid solid solid solid;
+}
+
+.section3 .bot_box, .section5 .bot_box, .section7 .bot_box, .section9 .bot_box, .section11 .bot_box {
+  border-width: 60px 2880px 0 0;
+  /*border-style: solid dashed solid solid;*/
+  border-style: solid solid solid solid;
+}
+
+.section2 .man_box {
+
+  position: relative;
+
+  z-index: 10;
+
+  margin-top: -60px;
+
+}
+
+.section2 .intro {
+
+  display: none;
+
+}
+
+.section3 .man_box {
+
+  position: relative;
+
+  z-index: 9;
+
+  margin-top: -20px;
+
+}
+
+.section4 .man_box {
+
+  position: relative;
+
+  z-index: 8;
+
+  margin-top: -60px;
+
+}
+
+.section5 .man_box {
+
+  position: relative;
+
+  z-index: 7;
+}
+
+.section5
+{
+	display: block;
+}
+
+.section6 .man_box {
+
+  position: relative;
+
+  z-index: 6;
+
+  margin-top: -60px;
+
+}
+
+.section7 .man_box {
+
+  position: relative;
+
+  z-index: 6;
+
+  margin-top: -22px;
+
+}
+
+.section8 .man_box {
+
+  position: relative;
+
+  z-index: 5;
+
+  /*margin-top: -60px;*/
+
+}
+
+.section9 .man_box {
+
+  position: relative;
+
+  z-index: 4;
+
+  margin-top: -60px;
+
+}
+
+.section10 .man_box {
+
+  position: relative;
+
+  z-index: 3;
+
+  /*margin-top: -60px;*/
+
+}
+
+.section11 .man_box {
+  position: relative;
+  z-index: 2;
+  margin-top: -40px;
+}
+
+.section12 .man_box {
+  position: relative;
+  z-index: 1;
+  margin-top: 0px;
+}

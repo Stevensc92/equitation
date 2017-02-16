@@ -1,0 +1,60 @@
+html, body {
+
+}
+i {
+    font-style: normal;
+}
+body {
+
+    color: #fff;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+header {
+
+    min-height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.mid_box {
+    padding: 0px 0px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    outline: none;
+}
+/* school */
+
+
+.school_top {
+
+  border-color: transparent transparent #ff9900 transparent;
+}
+
+.school_bot {
+
+  border-color: transparent #ff9900 transparent transparent;
+}
+
+.school_mid {
+
+  background: #ff9900;
+  padding: 30px 0;
+}
+
+
+.clear {
+
+  clear: both;
+}

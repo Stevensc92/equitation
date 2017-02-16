@@ -1,0 +1,596 @@
+@font-face
+{
+	font-family: 'MotionPicturePersonalUse';
+	src: url('design/font/MotionPicturePersonalUse.eot?#iefix') format('embedded-opentype'),
+	     url('design/font/MotionPicturePersonalUse.woff') format('woff'),
+	     url('design/font/MotionPicturePersonalUse.ttf')  format('truetype'),
+	     url('design/font/MotionPicturePersonalUse.svg#MotionPicturePersonalUse') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face
+{
+	font-family: 'GillSans-Light';
+	src: url('design/font/GillSans-Light.eot?#iefix') format('embedded-opentype'),
+	     url('design/font/GillSans-Light.woff') format('woff'),
+	     url('design/font/GillSans-Light.ttf')  format('truetype'),
+	     url('design/font/GillSans-Light.svg#GillSans-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+section.slider
+{
+	margin-top: 70px;
+}
+
+.title_section
+{
+	height: 180px;
+	display: block;
+	padding-top: 30px;
+}
+
+.ecole
+{
+	background: url("design/img/ecole.jpg") no-repeat;
+	width: 100%;
+	height: 515px;
+}
+
+.ecole .text
+{
+	margin-top: 100px;
+	margin-left: 50px;
+	color: black;
+}
+
+.text_intro
+{
+	border: 2px solid black;
+	padding: 10px;
+	text-transform: none;
+	width: 60%;
+	margin: auto;
+	text-align: center;
+	font-size: 18px;
+}
+
+#school .text
+{
+	margin-top: 50px;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+body
+{
+	font-family: 'GillSans-Light';
+}
+
+header
+{
+	background-color: #2e2c2e;
+	min-height: 70px;
+}
+
+.logo
+{
+	padding-left: 20px;
+	padding-top: 12px;
+	width: 340px;
+	height: 50px;
+	float: left;
+}
+
+#navbar
+{
+	font-family: 'GillSans-Light';
+	float: right;
+	margin-top: 12px;
+	text-align: right;
+}
+
+#navbar > ul > li
+{
+	font-size: 20px;
+}
+
+#navbar > ul > li a:hover
+{
+	background-color: #C1C1C1;
+	color: black;
+}
+
+#pages
+{
+	/*margin-top: 110px;*/
+}
+
+.tp-leftarrow
+{
+	content: '<i class="fa fa-arrow-right" aria-hidden="true"></i>';
+}
+
+.tbox-grey
+{
+	border-color: transparent transparent rgb(130, 124, 124) transparent;
+}
+
+.bbox-grey
+{
+	border-color: transparent rgb(130, 124, 124) transparent transparent;
+}
+
+.bg-grey { background-color: rgb(130, 124, 124); }
+
+h3
+{
+	text-transform: none;
+	font-family: 'MotionPicturePersonalUse';
+	font-weight: normal;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+h3:before, h3:after
+{
+	display: inline-block;
+	width: 150px;
+	height: 3px;
+	font-family: 'Arial';
+	content: '  ';
+	font-size: 40px;
+	background-color: white;
+	margin: 10px;
+	box-shadow: 1px 1px 10px white;
+}
+
+.black:before, .black:after
+{
+	background-color: black;
+}
+
+.lines {line-height: 1; border-top: none;}
+
+.sub_title {font-size: 17px; opacity:0.8;}
+
+.mycarousel li
+{
+	visibility: visible;
+}
+
+.intro_img
+{
+	width: 200px;
+}
+
+.fleft{float:left;margin-left: -40px;}
+.fright{float:right;}
+
+.intro_img, .text
+{
+	vertical-align: top;
+	display: inline-block;
+}
+
+.intro_img
+{
+	/*border:6px solid rgb(44, 44, 44);*/
+	margin-right: -40px;
+}
+
+.text
+{
+	text-transform: none;
+	font-size: 20px;
+	margin:0px;
+	margin-bottom: 25px;
+}
+
+#service .text
+{
+	font-size: 16px;
+}
+
+#service .text .bold
+{
+	font-size: 20px;
+}
+
+.sow-google-map-canvas img {
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  line-height: normal !important;
+  max-width: none !important;
+  zoom: normal !important;
+}
+
+#portfolio
+{
+	background: url("design/img/alexandra_saut.png") no-repeat;
+	background-size: 100%;
+	height: 400px;
+}
+
+.portfolio_mid, .about_us_mid { background: transparent; }
+.portfolio_top, .about_us_top { border-color: transparent transparent transparent transparent; }
+
+#about_us
+{
+	background: url("design/img/terrain.png") no-repeat;
+	background-size: 100%;
+	height: 300px;
+}
+
+.section4 .top_box
+{
+	border-width: 60px 0 0 2880px;
+}
+
+.philosophie_top
+{
+	border-color: transparent transparent transparent #44A5AC;
+}
+
+.philosophie_mid
+{
+	background: #44A5AC;
+}
+
+.sub_title { text-transform: none; }
+
+#philosophie div.item_p, #installation div.item_p, #service div.item_p, #famille div.item_p
+{
+	display: inline-block;
+	width: 300px;
+	min-height: 225px;
+	background-color: #334D68;
+	vertical-align: top;
+	margin: 0 40px 40px;
+}
+
+.portrait
+{
+	width: 225px!important;
+}
+
+.no-tt { text-transform: none; }
+
+.installation_mid
+{
+	background: #334D68;
+}
+
+#woo
+{
+	background: url("design/img/balade.png") no-repeat;
+	background-size: 100%;
+	height: 430px;
+}
+
+.service_mid
+{
+	background: #D44032;
+}
+
+.service_top
+{
+	border-top: 1px solid rgb(52, 78, 105);
+}
+
+.item
+{
+	display: inline-block;
+}
+
+#service .item .text
+{
+	line-height: 1.2;}
+
+.sub_service
+{
+	color: black;
+	/*font-weight: bold;*/
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-transform: none;
+	font-size: 20px;
+	border: 2px solid black;
+}
+
+.sub_service_top
+{
+	width: 400px;
+	border: 1px solid black;
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+#facade
+{
+	background: url("design/img/patte.jpg") no-repeat;
+	background-size: 100%;
+	height: 330px;
+}
+
+.tarif_mid
+{
+	background: #4C4C4C;
+}
+
+.tarif_ul
+{
+	list-style: none;
+	text-transform: none;
+	font-size: 20px;
+	text-align: justify;
+}
+
+.tarif_img
+{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.tarif_ul > li
+{
+	margin: 25px;
+	font-size: 16px;
+}
+
+.tarif_ul > li .bold
+{
+	font-size: 20px;
+}
+
+.icone_x
+{
+	background: url("design/img/icone_x.png");
+	width: 72px;
+	height: 53px;
+}
+
+.fb
+{
+	background: url("design/img/fb.png");
+	width: 42px;
+	height: 78px;
+}
+
+.instagram
+{
+	background: url("design/img/instagram.png");
+	width: 50px;
+	height: 50px;
+}
+
+#contact ul
+{
+	list-style: none;
+	margin: auto;
+	margin-top: 110px;
+}
+
+#contact ul > li {margin: 20px;}
+
+.maps
+{
+	background: url("design/img/maps.jpg");
+	width: 679px;
+	height: 463px;
+}
+
+.localisation, .number, .mail
+{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.localisation img, .number img
+{
+	float: left;
+	margin-top: 16px;
+	margin-right: 10px;
+}
+
+.localisation, .number, .mail
+{
+	height: 80px;
+	margin-right: 20px;
+	text-align: justify;
+}
+
+.localisation .txt
+{
+	display: block;
+	width: 150px;
+	margin-top: 15px;
+	font-size: 14px;
+}
+
+.number .txt
+{
+	display: block;
+	width: 180px;
+	margin-top: 15px;
+	font-size: 14px;
+}
+
+.mail .txt
+{
+	display: block;
+	width: 190px;
+	margin-top: 15px;
+	font-size: 14px;
+}
+
+
+.number
+{
+	width: auto;
+	height: 80px;
+}
+
+.sub_maps
+{
+	margin: auto;
+	padding-left: 20px;
+	text-transform: none;
+}
+
+.info_trajet
+{
+	height: 200px;
+	margin-top: 100px;
+	border-right: 1px solid white;
+}
+
+.famille_mid
+{
+	background: #eb6d5e;
+}
+
+@media (max-width:1280px)
+{
+	.ecole
+	{
+		height: 495px;
+	}
+}
+
+@media (min-width:1360px)
+{
+	.ecole
+	{
+		background-size: 100%;
+	}
+
+	#portfolio
+	{
+		height: 420px;
+	}
+
+	#facade
+	{
+		height: 350px;
+	}
+}
+
+@media (min-width: 1440px)
+{
+	.ecole
+	{
+		height: 535px;
+	}
+
+	#portfolio
+	{
+		height: 450px;
+	}
+
+	#about_us
+	{
+		height: 335px;
+	}
+}
+
+@media (min-width: 1600px)
+{
+	.ecole
+	{
+		height: 605px;
+	}
+
+	#portfolio
+	{
+		height: 495px;
+	}
+
+	#woo
+	{
+		height: 530px;
+	}
+
+	#facade
+	{
+		height: 430px;
+	}
+
+	#about_us
+	{
+		height: 365px;
+	}
+}
+
+@media (min-width: 1680px)
+{
+	.ecole
+	{
+		height: 625px;
+	}
+}
+
+@media (min-width: 1768px)
+{
+	.ecole
+	{
+		height: 655px;
+	}
+
+	#portfolio
+	{
+		height: 525px;
+	}
+
+	#about_us
+	{
+		height: 405px;
+	}
+
+	#woo
+	{
+		height: 580px;
+	}
+
+	#facade
+	{
+		height: 450px;
+	}
+}
+
+@media (min-width: 1920px)
+{
+	.ecole
+	{
+		height: 715px;
+	}
+
+	#portfolio
+	{
+		height: 575px;
+	}
+
+	#about_us
+	{
+		height: 435px;
+	}
+
+	#woo
+	{
+		height: 630px;
+	}
+
+	#facade
+	{
+		height: 500px;
+	}
+}
