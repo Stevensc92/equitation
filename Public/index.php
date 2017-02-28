@@ -8,6 +8,7 @@
 		<meta name="robots" content="index, follow" />
 		<meta http-equiv="content-language" content="fr" />
 		<meta property="og:image" content="http://equitationledermann.com/Public/img/alexandra_saut.png" />
+		<meta name="google-site-verification" content="dJ3CQa5sUEguIoU3GPJ6sGkV8VxzMEjf04xp-BKbhQY" />
 
 		<link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" media="all" />
 		<link rel="stylesheet" href="./css/main.css" type="text/css" media="all" />
