@@ -1,0 +1,175 @@
+/*****************\
+ * G E N E R A L *
+\*****************/
+
+@font-face
+{
+	font-family: 'MotionPicturePersonalUse';
+	src: url('../font/MotionPicturePersonalUse.eot?#iefix') format('embedded-opentype'),
+	     url('../font/MotionPicturePersonalUse.woff') format('woff'),
+	     url('../font/MotionPicturePersonalUse.ttf')  format('truetype'),
+	     url('../font/MotionPicturePersonalUse.svg#MotionPicturePersonalUse') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face
+{
+	font-family: 'GillSans-Light';
+	src: url('../font/GillSans-Light.eot?#iefix') format('embedded-opentype'),
+	     url('../font/GillSans-Light.woff') format('woff'),
+	     url('../font/GillSans-Light.ttf')  format('truetype'),
+	     url('../font/GillSans-Light.svg#GillSans-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body
+{
+	color: #fff;
+	line-height: 1.2;
+}
+
+.image-background
+{
+	height: auto;
+	width: 100%;
+}
+
+.img-mobile
+{
+	width: 100px;
+	height: auto;
+	background-size: 100%;
+	margin: 10px;
+}
+
+.img-center
+{
+	text-align: center;
+}
+
+.img-text
+{
+	font-size: 16px;
+	text-align: center;
+}
+
+
+/***************\
+ * H E A D E R *
+\***************/
+
+#header
+{
+	width: 100%;
+	background-color: #2e2c2e;
+	min-height: 100px;
+}
+
+.navbar
+{
+	margin-bottom: 0px;
+	border: none;
+}
+
+.navbar-default .navbar-collapse
+{
+	margin-top: 15px;
+}
+
+.navbar-toggle
+{
+	margin-top: 25px;
+}
+
+/***************\
+ * S C H O O L *
+\***************/
+
+#school
+{
+	width: 100%;
+	background-color: rgb(130, 124, 124);
+}
+
+.title-section
+{
+	text-align: center;
+}
+
+.title
+{
+	color: #fff;
+	font-size: 1.6em;
+	font-family: 'MotionPicturePersonalUse';
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.title:before, .title:after
+{
+	display: inline-block;
+	width: 40px;
+	height: 1px;
+	font-family: 'Arial';
+	content: '';
+	font-size: 40px;
+	background-color: white;
+	margin: 4px 10px;
+	box-shadow: 1px 1px 10px white;
+}
+
+.sub-title
+{
+	font-size: 0.8em;
+	margin-bottom: 20px;
+	opacity: 0.8;
+}
+
+/*************************\
+ * P H I L O S O P H I E *
+\*************************/
+
+#philosophie
+{
+	width: 100%;
+	background: #44A5AC;
+}
+
+/*****************\
+ * F A M I L L E *
+\*****************/
+
+#famille
+{
+	width: 100%;
+	background: #eb6d5e;
+}
+
+
+
+#installation
+{
+	width: 100%;
+	background: #334D68;
+}
+
+#service
+{
+	width: 100%;
+	background: #D44032;
+}
+
+#tarif
+{
+	width: 100%;
+	background: #4C4C4C;
+}
+
+#evreux
+{
+	width: 100%;
+	background: #000;
+}
