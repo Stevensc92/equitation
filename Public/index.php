@@ -363,7 +363,7 @@
 						</div>
 					</div>
 					<div class="col-md-6">
-					<img src="./img/maps.jpg" class="img-responsive" alt="Map" />
+					<img src="./img/maps.jpg" class="img-responsive" alt="Map équitation Evreux" />
 						<!-- <div class="maps"></div> -->
 					</div>
 				</div>
@@ -403,7 +403,7 @@
 
 </script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/app.js"></script>
+<!-- <script type="text/javascript" src="js/app.js"></script> -->
 <!-- <script type="text/javascript" src="http://parasponsive.com/para1/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.0"></script> -->
 
 </body>
