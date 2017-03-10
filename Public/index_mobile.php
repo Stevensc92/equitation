@@ -116,7 +116,7 @@
 		<div id="famille" class="container">
 			<div class="row">
 				<div class="title-section">
-					<h1 class="title">L'Histoire</h1>
+					<h3 class="title">L'Histoire</h3>
 				</div>
 			</div>
 
@@ -356,7 +356,7 @@
 		<div id="evreux">
 			<div class="row">
 				<div class="title-section">
-					<h3 class="title">Contact et localisation</h3>
+					<h2 class="title">Contact et localisation</h2>
 				</div>
 			</div>
 
