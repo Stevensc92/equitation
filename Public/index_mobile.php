@@ -39,11 +39,11 @@
 
 			<div class="collapse navbar-collapse" id="navbar-menu">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#anc-famille" class="ancre">L'histoire</a></li>
-					<li><a href="#anc-philosophie" class="ancre">Philosophie</a></li>
+					<li><a href="#famille" class="ancre">L'histoire</a></li>
+					<li><a href="#philosophie" class="ancre">Philosophie</a></li>
 					<li><a href="#installation" class="ancre">Installations</a></li>
-					<li><a href="#anc-service" class="ancre">Services</a></li>
-					<li><a href="#anc-tarif" class="ancre">Tarifs</a></li>
+					<li><a href="#service" class="ancre">Services</a></li>
+					<li><a href="#tarif" class="ancre">Tarifs</a></li>
 					<li><a href="#evreux" class="ancre">Localisation</a></li>
 					<li>
 						<a href="#evreux" class="ancre">

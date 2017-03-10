@@ -28,6 +28,7 @@ body
 {
 	color: #fff;
 	line-height: 1.2;
+	overflow-x: hidden;
 }
 
 .image-background
@@ -73,14 +74,31 @@ body
 	border: none;
 }
 
+.navbar-nav
+{
+	margin-right: 50px;
+}
+
 .navbar-default .navbar-collapse
 {
-	margin-top: 15px;
+	margin-top: 20px;
+	/*font-size: 1.5em;*/
 }
 
 .navbar-toggle
 {
 	margin-top: 25px;
+}
+
+.navbar-default .navbar-nav > li > a
+{
+	color: #FFF;
+}
+
+.navbar-default .navbar-nav > li > a:hover
+{
+	background-color: #C1C1C1;
+	color: black;
 }
 
 /***************\
@@ -148,7 +166,9 @@ body
 	background: #eb6d5e;
 }
 
-
+/***************************\
+ * I N S T A L L A T I O N *
+\***************************/
 
 #installation
 {
@@ -156,11 +176,19 @@ body
 	background: #334D68;
 }
 
+/*****************\
+ * S E R V I C E *
+\*****************/
+
 #service
 {
 	width: 100%;
 	background: #D44032;
 }
+
+/*************\
+ * T A R I F *
+\*************/
 
 #tarif
 {
@@ -168,8 +196,58 @@ body
 	background: #4C4C4C;
 }
 
+/***************\
+ * E V R E U X *
+\***************/
+
 #evreux
 {
 	width: 100%;
 	background: #000;
+}
+
+/*****************************\
+ * M E D I A - Q U E R I E S *
+\*****************************/
+
+@media (min-width: 1086px)
+{
+	.navbar-default .navbar-collapse
+	{
+		display: block;
+		font-size: 1.5em;
+	}
+
+	.navbar-nav
+	{
+		display: block;
+	}
+}
+
+@media (min-width: 768px)
+{
+	.navbar-toggle
+	{
+		display: block;
+		position: absolute;
+		right: 0;
+	}
+
+	.navbar-nav
+	{
+		display: none;
+	}
+}
+
+@media (min-width: 900px)
+{
+	.navbar-toggle
+	{
+		display: none;
+	}
+
+	.navbar-nav
+	{
+		display: block;
+	}
 }
