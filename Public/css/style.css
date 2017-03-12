@@ -6,9 +6,9 @@
 {
 	font-family: 'MotionPicturePersonalUse';
 	src: url('../font/MotionPicturePersonalUse.eot?#iefix') format('embedded-opentype'),
-	     url('../font/MotionPicturePersonalUse.woff') format('woff'),
-	     url('../font/MotionPicturePersonalUse.ttf')  format('truetype'),
-	     url('../font/MotionPicturePersonalUse.svg#MotionPicturePersonalUse') format('svg');
+		 url('../font/MotionPicturePersonalUse.woff') format('woff'),
+		 url('../font/MotionPicturePersonalUse.ttf')  format('truetype'),
+		 url('../font/MotionPicturePersonalUse.svg#MotionPicturePersonalUse') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -17,9 +17,9 @@
 {
 	font-family: 'GillSans-Light';
 	src: url('../font/GillSans-Light.eot?#iefix') format('embedded-opentype'),
-	     url('../font/GillSans-Light.woff') format('woff'),
-	     url('../font/GillSans-Light.ttf')  format('truetype'),
-	     url('../font/GillSans-Light.svg#GillSans-Light') format('svg');
+		 url('../font/GillSans-Light.woff') format('woff'),
+		 url('../font/GillSans-Light.ttf')  format('truetype'),
+		 url('../font/GillSans-Light.svg#GillSans-Light') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -126,7 +126,7 @@ body
 .title
 {
 	color: #fff;
-	font-size: 1.6em;
+	font-size: 2.2em;
 	font-family: 'MotionPicturePersonalUse';
 	margin-top: 20px;
 	margin-bottom: 10px;
@@ -277,6 +277,22 @@ body
 	}
 }
 
+@media (max-width: 767px)
+{
+    #school .title:before, #school .title:after
+    {
+        width: 15px;
+    }
+}
+
+@media (max-width: 400px)
+{
+    #school .title:before, #school .title:after
+    {
+        width: 5px;
+    }
+}
+
 @media (min-width: 768px)
 {
 	.navbar-toggle
@@ -289,6 +305,11 @@ body
 	.navbar-nav
 	{
 		display: none;
+	}
+
+	.title
+	{
+		font-size: 2.8em;
 	}
 
 	#evreux .maps

@@ -335,7 +335,7 @@
 
 			<div class="row">
 				<div class="col-md-2"></div>
-				<div class="col-xs-6 col-sm-6 col-md-4">
+				<div class="col-xs-12 col-sm-12 col-md-4">
 					<ul class="tarif_ul">
 						<li>Leçons et balades à partir de : <br><span class="bold">22 € / l'heure</span> (tarif adhérent)<br>
 						<span class="bold">36 € / l'heure</span> (tarif non adhérent) </li>
@@ -344,7 +344,7 @@
 					</ul>
 				</div>
 
-				<div class="col-xs-6 col-sm-6 col-md-6">
+				<div class="col-xs-12 col-sm-12 col-md-6">
 					<img src="./img/cheval_bisou.png" alt="Bisous de cheval" class="img-responsive" />
 				</div>
 			</div>
