@@ -382,11 +382,11 @@
 						</span>
 						<span class="mail">
 							<i class="fa fa-envelope-o" aria-hidden="true" style="font-size:20px; float:left;"></i>
-							<span class="txt">&nbsp;ecurieledermann@alicepro.fr</span>
+							<span class="txt">&nbsp;<a href="mailto:ecurieledermann@alicepro.fr">ecurieledermann@alicepro.fr</a></span>
 						</span>
 						<span class="number">
 							<img src="./img/icone_tel.png" alt="Telephone" />
-							<span class="txt">Tél : 02 27 34 17 42</span>
+							<span class="txt">Tél : <a href="callto:0227341742">02 27 34 17 42</a></span>
 						</span>
 					</div>
 				</div>
