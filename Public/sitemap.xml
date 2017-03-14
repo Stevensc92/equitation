@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>http://equitationledermann.com/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/logo.png</image:loc>
+      <image:caption>Logo de l'école d'équitation ledermann</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/ecole.jpg</image:loc>
+      <image:caption>Aperçu de l'école</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/balade.jpg</image:loc>
+      <image:caption>Balade en forêt sur des chevaux</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/podium.png</image:loc>
+      <image:caption>Alexandra Ledermann sur un podium</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/alexandra_saut.png</image:loc>
+      <image:caption>Alexandra sautant un obstacle avec son cheval</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/grand_pere_cheval.jpg</image:loc>
+      <image:caption>Grand père d'Alexandra sur un cheval</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/saut_obstacle.jpg</image:loc>
+      <image:caption>Alexandra sautant un obstacle</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/alexandra_celebration.jpg</image:loc>
+      <image:caption>Alexandra sur son cheval, célébration</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/terrain_entrainement.png</image:loc>
+      <image:caption>Terrain d'entraînement</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/alexandra_cheval.png</image:loc>
+      <image:caption>Alexandra et son cheval</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/ecole_detente.png</image:loc>
+      <image:caption>Repos sur la pelouse des élèves</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/terrain.png</image:loc>
+      <image:caption>Vue d'ensemble du terrain extérieur avec les obstacles</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/terrain_exterieur_1.png</image:loc>
+      <image:caption>Enclos extérieur</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/ecurie_exterieur.png</image:loc>
+      <image:caption>Ecurie vue d'extérieur</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/terrain_exterieur_2.png</image:loc>
+      <image:caption>Deuxième enclos extérieur</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/ecurie_interieur.png</image:loc>
+      <image:caption>Ecurie/terrain d'interieur</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/balade.png</image:loc>
+      <image:caption>Balade en fôret</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/terrain_obstacle.png</image:loc>
+      <image:caption>Elève sautant un obstacle sur le terrain extérieur</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/terrain_obstacle_2.png</image:loc>
+      <image:caption>Elève et son professeur sur terrain extérieur</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/ecurie_cheval.png</image:loc>
+      <image:caption>Cheval dans une écurie</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/patte.jpg</image:loc>
+      <image:caption>Réunion de pattes de chevaux</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/cheval_bisou.png</image:loc>
+      <image:caption>Deux chevaux se faisant un bisous</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/localisation.jpg</image:loc>
+      <image:caption>Vue aérienne du centre Evreux</image:caption>
+    </image:image>
+
+    <image:image>
+      <image:loc>http://equitationledermann.com/img/maps.jpg</image:loc>
+      <image:caption>Localisation sur la maps google du centre d'équitation Evreux</image:caption>
+    </image:image>
+  </url>
+</urlset>
