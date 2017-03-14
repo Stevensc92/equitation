@@ -10,7 +10,7 @@
 		<meta property="og:image" content="http://equitationledermann.com/img/alexandra_saut.png" />
 
 		<link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" media="all" />
-		<link rel="stylesheet" href="./css/style.css" type="text/css">
+		<link rel="stylesheet" href="./css/style.min.css" type="text/css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" type="text/css">
 
 		<title>Ecole d'Equitation Ledermann - Evreux</title>
