@@ -296,9 +296,22 @@ body
 		width: 350px;
 	}
 
+	#school div.img-center:nth-child(2)
+	{
+		margin-top: -30px;
+	}
+
 	#famille div.img-center:nth-child(2) > .img-mobile
 	{
-		margin-top: 30px;
+		margin-top: 25px;
+		margin-left: -10px;
+	}
+
+	#famille div.img-center:nth-child(1) > .img-mobile,
+	#famille div.img-center:nth-child(3) > .img-mobile
+	{
+		width: 80px;
+		margin-left: -2px;
 	}
 }
 
@@ -311,7 +324,9 @@ body
 }
 
 @media (min-width: 768px)
-{12
+{
+	.navbar-toggle
+	{
 		display: block;
 		position: absolute;
 		right: 0;
