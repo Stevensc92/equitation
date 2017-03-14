@@ -29,7 +29,7 @@
 					<span class="icon-bar"></span>
 				</button>
 				<a class="navbar-brand" href="#">
-					<img src="./img/logo.png" id="header-logo"/>
+					<img src="./img/logo.png" id="header-logo" alt="Logo de l'école"/>
 				</a>
 			</div>
 
@@ -53,7 +53,7 @@
 
 	<main id="container">
 		<div id="home">
-			<img src="./img/ecole.jpg" class="image-background" />
+			<img src="./img/ecole.jpg" class="image-background" alt="Aperçu de l'école"/>
 		</div>
 
 		<div id="school" class="container">
@@ -117,13 +117,13 @@
 			</div>
 
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-4 img-center">
+				<div class="col-xs-4 col-sm-4 col-md-4 img-center">
 					<img src="./img/grand_pere_cheval.jpg" class="img-mobile" alt="Grand père sur un cheval"/>
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-4 img-center">
+				<div class="col-xs-4 col-sm-4 col-md-4 img-center">
 					<img src="./img/saut_obstacle.jpg" class="img-mobile" alt="Saut d'obstacle" />
 				</div>
-				<div class="col-xs-12 col-sm-12 col-md-4 img-center">
+				<div class="col-xs-4 col-sm-4 col-md-4 img-center">
 					<img src="./img/alexandra_celebration.jpg" class="img-mobile" alt="Alexandre Ledermann" />
 				</div>
 			</div>
@@ -263,11 +263,11 @@
 		<div id="service" class="container">
 			<div class="row">
 				<div class="title-section">
-					<h3 class="title">Les installations</h3>
+					<h3 class="title">Les services</h3>
 				</div>
 			</div>
 
-			<div class="row col-md-4">
+			<div class="row col-md-4 col-lg-4">
 				<div class="col-xs-12 col-sm-12 img-center">
 					<img
 						class="img-mobile"
@@ -284,7 +284,7 @@
 				</div>
 			</div>
 
-			<div class="row col-md-4">
+			<div class="row col-md-4 col-lg-4">
 				<div class="col-xs-12 col-sm-12 img-center">
 					<img
 						class="img-mobile"
@@ -302,7 +302,7 @@
 				</div>
 			</div>
 
-			<div class="row col-md-4">
+			<div class="row col-md-4 col-lg-4">
 				<div class="col-xs-12 col-sm-12 img-center">
 					<img
 						class="img-mobile"
@@ -334,8 +334,8 @@
 			</div>
 
 			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-xs-12 col-sm-12 col-md-4">
+				<div class="col-xs-1 col-sm-2 col-md-1 col-lg-2"></div>
+				<div class="col-xs-10 col-sm-10 col-md-4 col-lg-4">
 					<ul class="tarif_ul">
 						<li>Leçons et balades à partir de : <br><span class="bold">22 € / l'heure</span> (tarif adhérent)<br>
 						<span class="bold">36 € / l'heure</span> (tarif non adhérent) </li>
@@ -343,8 +343,8 @@
 						<li>Coaching CSO personnalisé avec <br><span class="bold">Jean-Pierre ou Alexandra Ledermann</span> :<br> nous consulter</li>
 					</ul>
 				</div>
-
-				<div class="col-xs-12 col-sm-12 col-md-6">
+				<div class="col-xs-2 col-sm-2 hidden-md"></div>
+				<div class="col-xs-10 col-sm-10 col-md-6 col-lg-6">
 					<img src="./img/cheval_bisou.png" alt="Bisous de cheval" class="img-responsive" />
 				</div>
 			</div>
@@ -374,8 +374,8 @@
 			</div>
 
 			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-6"></div>
-				<div class="col-xs-12 col-sm-12 col-md-6">
+				<div class="col-xs-12 col-sm-2 col-md-6"></div>
+				<div class="col-xs-12 col-sm-10 col-md-6">
 					<div class="sub_maps">
 						<span class="localisation">
 							<img src="./img/icone_localisation.png" alt="Localisation" /> <span class="txt">2 Rue de Fauville<br> 27930 HUEST</span>
@@ -386,7 +386,7 @@
 						</span>
 						<span class="number">
 							<img src="./img/icone_tel.png" alt="Telephone" />
-							<span class="txt">Tél : <a href="callto:0227341742">02 27 34 17 42</a></span>
+							<span class="txt">Tél : <a href="tel:0227341742">02 27 34 17 42</a></span>
 						</span>
 					</div>
 				</div>

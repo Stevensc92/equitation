@@ -232,6 +232,13 @@ body
 	background: #000;
 }
 
+#evreux a
+{
+	color: inherit;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
 #evreux .details,
 #evreux .details img
 {
@@ -283,6 +290,16 @@ body
     {
         width: 15px;
     }
+
+	#evreux .maps
+	{
+		width: 350px;
+	}
+
+	#famille div.img-center:nth-child(2) > .img-mobile
+	{
+		margin-top: 30px;
+	}
 }
 
 @media (max-width: 400px)
@@ -294,9 +311,7 @@ body
 }
 
 @media (min-width: 768px)
-{
-	.navbar-toggle
-	{
+{12
 		display: block;
 		position: absolute;
 		right: 0;
@@ -314,8 +329,13 @@ body
 
 	#evreux .maps
 	{
-		width: 300px;
+		width: 400px;
 		height: auto;
+	}
+
+	#famille div.img-center:nth-child(2) > .img-mobile
+	{
+		margin-top: 30px;
 	}
 }
 
@@ -364,8 +384,13 @@ body
 
 	#evreux .maps
 	{
-		width: 400px;
+		width: 500px;
 		height: auto;
+	}
+
+	#famille div.img-center:nth-child(2) > .img-mobile
+	{
+		margin-top: 45px;
 	}
 }
 
