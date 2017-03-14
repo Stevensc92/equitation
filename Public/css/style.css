@@ -261,6 +261,11 @@ body
 	margin-right: 10px;
 }
 
+.mail i
+{
+	font-size: 20px;
+}
+
 #school, #famille, #philosophie, #installation, #service, #tarif, #evreux
 {
 	padding-bottom: 30px;

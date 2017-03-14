@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8"/>
-		<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="viewport" content="width=device-width">
+		<meta name="viewport" content="initial-scale=1.0">
 		<meta name="keywords" lang="fr" content="Equitation Evreux, Equitation Eure, Equitation Normandie, Centre Equestre Evreux, Centre Equestre Eure, Centre Equestre Normandie, Club Hippique Evreux, Club Hippique Eure, Club Hippique Normandie, Balade cheval Evreux, Balade cheval Eure, Balade cheval Normandie, Promenade cheval Evreux, Promenade cheval Eure, Promenade cheval Normandie, Pension cheval Evreux, Pension cheval Eure, Pension cheval Normandie, Pension cheval région parisienne, Débourrage cheval Evreux, Débourrage cheval Eure, Débourrage cheval Normandie, Stage CSO Evreux, Stage CSO Eure, Stage CSO Normandie, Stage CSO Ledermann, Equitation Ledermann, Alexandra Ledermann, Cheval Evreux, Cheval Eure, Cheval Normandie"/>
 		<meta name="description" content="L’Ecole d’Equitation Ledermann près d’Evreux en Normandie vous propose promenades à cheval, leçons, pensions, CSO. Du niveau débutant au confirmé."/>
 		<meta name="robots" content="index, follow" />
-		<meta http-equiv="content-language" content="fr" />
-		<meta property="og:image" content="http://equitationledermann.com/Public/img/alexandra_saut.png" />
+		<meta property="og:image" content="http://equitationledermann.com/img/alexandra_saut.png" />
 
 		<link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" media="all" />
 		<link rel="stylesheet" href="./css/style.css" type="text/css">
@@ -381,7 +381,7 @@
 							<img src="./img/icone_localisation.png" alt="Localisation" /> <span class="txt">2 Rue de Fauville<br> 27930 HUEST</span>
 						</span>
 						<span class="mail">
-							<i class="fa fa-envelope-o" aria-hidden="true" style="font-size:20px; float:left;"></i>
+							<i class="fa fa-envelope-o" aria-hidden="true"></i>
 							<span class="txt">&nbsp;<a href="mailto:ecurieledermann@alicepro.fr">ecurieledermann@alicepro.fr</a></span>
 						</span>
 						<span class="number">
