@@ -286,17 +286,17 @@ body
 
 @media (max-width: 767px)
 {
-    #school .title:before, #school .title:after
-    {
-        width: 15px;
-    }
+	#school .title:before, #school .title:after
+	{
+		width: 15px;
+	}
 
 	#evreux .maps
 	{
 		width: 350px;
 	}
 
-	#school div.img-center:nth-child(2)
+	#school div.img-center:nth-child(2) > .img-mobile
 	{
 		margin-top: -30px;
 	}
@@ -317,10 +317,10 @@ body
 
 @media (max-width: 400px)
 {
-    #school .title:before, #school .title:after
-    {
-        width: 5px;
-    }
+	#school .title:before, #school .title:after
+	{
+		width: 5px;
+	}
 }
 
 @media (min-width: 768px)
@@ -346,6 +346,11 @@ body
 	{
 		width: 400px;
 		height: auto;
+	}
+
+	#school div.img-center:nth-child(2) > .img-mobile
+	{
+		margin-top: -30px;
 	}
 
 	#famille div.img-center:nth-child(2) > .img-mobile
