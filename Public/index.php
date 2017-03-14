@@ -124,7 +124,7 @@
 					<img src="./img/saut_obstacle.jpg" class="img-mobile" alt="Saut d'obstacle" />
 				</div>
 				<div class="col-xs-4 col-sm-4 col-md-4 img-center">
-					<img src="./img/alexandra_celebration.jpg" class="img-mobile" alt="Alexandre Ledermann" />
+					<img src="./img/alexandra_celebration.jpg" class="img-mobile" alt="Alexandra Ledermann" />
 				</div>
 			</div>
 
