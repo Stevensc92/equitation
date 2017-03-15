@@ -1,0 +1,136 @@
+#Home Index
+HomeIndex:
+    url: /
+    method: GET
+    callback: Home.index
+
+#Traduction Index
+TranslateIndex:
+    url: /translate
+    method: GET
+    callback: Translate.index
+
+#Interpretariat Index
+InterpretariatIndex:
+    url: /interpretariat
+    method: GET
+    callback: Interpretariat.index
+
+#Location Index
+LocationIndex:
+    url: /location
+    method: GET
+    callback: Location.index
+
+#Reference page
+ReferencesIndex:
+    url: /references
+    method: GET
+    callback: References.index
+
+#Devis page
+DevisIndex:
+    url: /devis
+    method: GET
+    callback: Devis.index
+
+###############################
+
+### Admin System Clients ###
+
+#Users Dashboard Update Clients
+UsersDashboardUpdateClients:
+    url: /admin/clients/edit/:id
+    method: GET
+    callback: Admin.upClients
+
+#Users Dashboard Delete Clients
+UsersDashboardDeleteClients:
+    url: /admin/clients/delete/:id
+    method: GET
+    callback: Admin.delClients
+
+#Users Dashboard Add Clients
+UsersDashboardAddClients:
+    url: /admin/clients/add
+    method: GET
+    callback: Admin.addClients
+
+#Users Dashboard List Clients
+UsersDashboardClients:
+    url: /admin/clients
+    method: GET
+    callback: Admin.clients
+
+### Admin System Texte ###
+
+#Users Dashboard Update Textes
+UsersDashboardEditTextes:
+    url: /admin/textes/edit/:id
+    method: GET
+    callback: Admin.upTextes
+
+#Users Dashboard Delete Textes
+UsersDashboardDeleteTextes:
+    url: /admin/textes/delete/:id
+    method: GET
+    callback: Admin.delTextes
+
+#Users Dashboard Add Textes
+UsersDashboardAddTextes:
+    url: /admin/textes/add
+    method: GET
+    callback: Admin.addTextes
+
+#Users Dashboard List Textes
+UsersDashboardTextes:
+    url: /admin/textes
+    method: GET
+    callback: Admin.textes
+
+#Users Dashboard Locale Translate
+UsersDashboardLocaleTranslate:
+    url: /admin/locale
+    method: GET
+    callback: Admin.locale
+
+
+###############################
+
+#Users Dashboard
+UsersDashboard:
+    url: /admin
+    method: GET
+    callback: Users.dashboard
+
+#Users Login
+UsersLogin:
+    url: /login
+    method: GET
+    callback: Users.login
+
+#Users Logout
+UsersLogout:
+    url: /logout
+    method: GET
+    callback: Users.logout
+
+#Users Recover
+UsersRecover:
+    url: /recover
+    method: GET
+    callback: Users.recover
+    
+#Users Recover
+UsersRecoverToken:
+    url: /recover/:token
+    method: GET
+    callback: Users.recover
+
+### Language ###
+
+#Change Language
+ChangeLanguage:
+    url: /ajax/cl
+    method: GET
+    callback: Locale.change
