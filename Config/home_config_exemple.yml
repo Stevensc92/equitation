@@ -1,8 +1,0 @@
----
-name: Accueil
-activated: true
-url: /manager/plugins/home/index
-order: 1
-slug: home
-icon: fa-home
-...
