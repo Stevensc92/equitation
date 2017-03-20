@@ -10,9 +10,3 @@ function __autoload($name)
 	if (file_exists(CONTROLLER.DS.$name.'.php'))
 		require_once CONTROLLER.DS.$name.'.php';
 }
-
-
-// include INC.DS.'breadcrumb.php';
-// include INC.DS.'object.php';
-// include INC.DS.'sql.php';
-// include INC.DS.'user.php';

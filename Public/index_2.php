@@ -1,23 +1,3 @@
-<?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
-define('ROOT', dirname(dirname(__FILE__)).'/back');
-define('DS',   DIRECTORY_SEPARATOR);
-
-define('INC', 		ROOT.DS.'inc');
-define('CONFIG', 	ROOT.DS.'config');
-define('TEMPLATES', ROOT.DS.'templates');
-define('VIEW', 		ROOT.DS.'view');
-define('MODEL', 	ROOT.DS.'models');
-define('CONTROLLER',ROOT.DS.'controllers');
-
-require_once CONFIG.DS.'database.php';
-require_once INC.DS.'sql.php';
-require_once MODEL.DS.'AppModel.php';
-
-require_once 'Autoload.php';
-?>
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
@@ -79,7 +59,7 @@ require_once 'Autoload.php';
 		<div id="school" class="container">
 			<div class="row">
 				<div class="title-section">
-					<h1 class="title"><?= School::getTitle() ?></h1>
+					<h1 class="title">L'Ecole d'Equitation Ledermann</h1>
 					<div class="sub-title">De la balade en forêt au plus haut niveau de compétition</div>
 				</div>
 
@@ -93,7 +73,13 @@ require_once 'Autoload.php';
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-4">
 					<p class="img-text">
-						<?= School::getTxtBlock(1); ?>
+						Que vous souhaitiez découvrir les joies de<br>
+						l'Equitation en toute sécurité, aller plus loin<br>
+						dans la connaissance du cheval, ou encore<br>
+						améliorer vos performances en compétition,<br>
+						vous trouverez un accompagnement<br>
+						personnalisé de qualité qui saura<br>
+						répondre à vos attentes.
 					</p>
 				</div>
 
@@ -108,7 +94,12 @@ require_once 'Autoload.php';
 
 				<div class="col-xs-12 col-sm-12 col-md-4 col-md-pull-2">
 					<p class="img-text">
-						<?= School::getTxtBlock(2); ?>
+						L'Ecole d'Equitation Ledermann<br>
+						a formé plusieurs champions,<br>
+						notamment Alexandra Ledermann,<br>
+						médaille de bronze en individuel aux<br>
+						Jeux Olympiques d'Atlanta et 1ère femme<br>
+						Championne d'Europe de Saut d'Obstacles.
 					</p>
 				</div>
 			</div>
@@ -121,7 +112,7 @@ require_once 'Autoload.php';
 		<div id="famille" class="container">
 			<div class="row">
 				<div class="title-section">
-					<h3 class="title"><?= Famille::getTitle(); ?></h3>
+					<h3 class="title">L'Histoire</h3>
 				</div>
 			</div>
 
@@ -140,7 +131,10 @@ require_once 'Autoload.php';
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12">
 					<p class="img-text">
-						<?= Famille::getTxtBlock(1); ?>
+						Près de 50 ans séparent ces images, du grand-père Albert pionnier des centres équestres en France,<br>
+						à la médaillée	olympique Alexandra en passant par
+						son père Jean-Pierre, cavalier de CSO émérite<br>
+						et fondateur en 1966 de l'Ecole d'Equitation Ledermann à Huest.
 					</p>
 				</div>
 			</div>
@@ -149,7 +143,7 @@ require_once 'Autoload.php';
 		<div id="philosophie" class="container">
 			<div class="row">
 				<div class="title-section">
-					<h3 class="title"><?= Philosophie::getTitle(); ?></h3>
+					<h3 class="title">Notre philosophie</h3>
 					<div class="sub-title">Sérieux et professionel</div>
 				</div>
 			</div>
@@ -165,7 +159,9 @@ require_once 'Autoload.php';
 
 				<div class="col-xs-12 col-sm-12">
 					<p class="img-text">
-						<?= Philosophie::getTxtBlock(1); ?>
+						Nous proposons à tous un enseignement à la fois classique et attractif qui
+						permet de monter en toute sécurité et avec plaisir aussi bien en promenade
+						qu’en compétition.
 					</p>
 				</div>
 			</div>
@@ -181,7 +177,9 @@ require_once 'Autoload.php';
 
 				<div class="col-xs-12 col-sm-12">
 					<p class="img-text">
-						<?= Philosophie::getTxtBlock(2); ?>
+						Nos priorités : la mise en confiance du cavalier et le respect du cheval.
+						Nos buts : instaurer entre vous et le cheval une relation basée sur
+						la confiance, la complicité et le plaisir partagé.
 					</p>
 				</div>
 			</div>
@@ -197,7 +195,8 @@ require_once 'Autoload.php';
 
 				<div class="col-xs-12 col-sm-12">
 					<p class="img-text">
-						<?= Philosophie::getTxtBlock(3); ?>
+						Venez nous voir, nous nous ferons un plaisir de vous faire découvrir ce que
+						nous pratiquons et enseignons depuis 50 ans.
 					</p>
 				</div>
 			</div>
@@ -210,7 +209,7 @@ require_once 'Autoload.php';
 		<div id="installation" class="container">
 			<div class="row">
 				<div class="title-section">
-					<h3 class="title"><?= Installation::getTitle(); ?></h3>
+					<h3 class="title">Les installations</h3>
 				</div>
 			</div>
 
@@ -248,7 +247,10 @@ require_once 'Autoload.php';
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-12">
 					<p class="img-text">
-						<?= Installation::getTxtBlock(1); ?>
+						L'Ecole d'Equitation Ledermann dispose d'une quarantaine de boxes, d'un<br>
+						manège couvert, de plusieurs paddocks et de 2 carrières dont une éclairée et<br>
+						un vaste spring-garden aux abords de la forêt<br>
+						comprenant un terrain en herbe et un parcours de cross.
 					</p>
 				</div>
 			</div>
@@ -261,7 +263,7 @@ require_once 'Autoload.php';
 		<div id="service" class="container">
 			<div class="row">
 				<div class="title-section">
-					<h3 class="title"><?= Service::getTitle(); ?></h3>
+					<h3 class="title">Les services</h3>
 				</div>
 			</div>
 
@@ -276,7 +278,8 @@ require_once 'Autoload.php';
 
 				<div class="col-xs-12 col-sm-12">
 					<p class="img-text">
-						<?= Service::getTxtBlock(1); ?>
+						<span class="bold">Cours d'Equitation du débutant au confirmé à partir de 8 ans</span><br><br>
+						<span class="bold">Promenades</span>
 					</p>
 				</div>
 			</div>
@@ -292,7 +295,9 @@ require_once 'Autoload.php';
 
 				<div class="col-xs-12 col-sm-12">
 					<p class="img-text">
-						<?= Service::getTxtBlock(2); ?>
+						<span class="bold">Travail et sortie en concours de votre cheval</span><br>
+						(Nationaux et Cycle Classique Jeunes Chevaux).<br><br>
+						<span class="bold">Coaching CSO personnalisé</span><br>
 					</p>
 				</div>
 			</div>
@@ -308,7 +313,10 @@ require_once 'Autoload.php';
 
 				<div class="col-xs-12 col-sm-12">
 					<p class="img-text">
-						<?= Service::getTxtBlock(3); ?>
+						<span class="bold">Pension pour votre cheval</span><br>
+						de loisir ou de sport <br>
+						(à la carte selon vos besoins)<br><br>
+						<span class="bold">Débourrage du jeune cheval</span>
 					</p>
 				</div>
 			</div>
@@ -321,20 +329,19 @@ require_once 'Autoload.php';
 		<div id="tarif" class="container">
 			<div class="row">
 				<div class="title-section">
-					<h3 class="title"><?= Tarif::getTitle(); ?></h3>
+					<h3 class="title">Les tarifs</h3>
 				</div>
 			</div>
 
 			<div class="row">
 				<div class="col-xs-1 col-sm-2 col-md-1 col-lg-2"></div>
 				<div class="col-xs-10 col-sm-10 col-md-4 col-lg-4">
-					<?= Tarif::getTxtBlock(1); ?>
-					<!-- <ul class="tarif_ul">
+					<ul class="tarif_ul">
 						<li>Leçons et balades à partir de : <br><span class="bold">22 € / l'heure</span> (tarif adhérent)<br>
 						<span class="bold">36 € / l'heure</span> (tarif non adhérent) </li>
 						<li>Pensions à partir de : <br><span class="bold">590 € / mois</span></li>
 						<li>Coaching CSO personnalisé avec <br><span class="bold">Jean-Pierre ou Alexandra Ledermann</span> :<br> nous consulter</li>
-					</ul> -->
+					</ul>
 				</div>
 				<div class="col-xs-2 col-sm-2 hidden-md"></div>
 				<div class="col-xs-10 col-sm-10 col-md-6 col-lg-6">
@@ -346,7 +353,7 @@ require_once 'Autoload.php';
 		<div id="evreux">
 			<div class="row">
 				<div class="title-section">
-					<h2 class="title"><?= Evreux::getTitle(); ?></h2>
+					<h2 class="title">Contact et localisation</h2>
 				</div>
 			</div>
 
@@ -355,7 +362,9 @@ require_once 'Autoload.php';
 					<img src="./img/localisation.jpg" class="img-mobile" alt="Centre Evreux" />
 					<div class="details">
 						<img src="./img/feets.jpg" alt="Pieds" />
-						<?= Evreux::getDistance(); ?>
+						A 5 mn d'Evreux<br>
+						30 mn de Rouen<br>
+						50 mn de Paris Porte Maillot<br>
 					</div>
 				</div>
 
@@ -369,15 +378,15 @@ require_once 'Autoload.php';
 				<div class="col-xs-12 col-sm-10 col-md-6">
 					<div class="sub_maps">
 						<span class="localisation">
-							<img src="./img/icone_localisation.png" alt="Localisation" /> <span class="txt"><?= Evreux::getAddress(); ?></span>
+							<img src="./img/icone_localisation.png" alt="Localisation" /> <span class="txt">2 Rue de Fauville<br> 27930 HUEST</span>
 						</span>
 						<span class="mail">
 							<i class="fa fa-envelope-o" aria-hidden="true"></i>
-							<span class="txt">&nbsp;<a href="mailto:ecurieledermann@alicepro.fr"><?= Evreux::getEmail(); ?></a></span>
+							<span class="txt">&nbsp;<a href="mailto:ecurieledermann@alicepro.fr">ecurieledermann@alicepro.fr</a></span>
 						</span>
 						<span class="number">
 							<img src="./img/icone_tel.png" alt="Telephone" />
-							<span class="txt">Tél : <a href="tel:0227341742"><?= Evreux::getTel(); ?></a></span>
+							<span class="txt">Tél : <a href="tel:0227341742">02 27 34 17 42</a></span>
 						</span>
 					</div>
 				</div>
