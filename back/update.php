@@ -1,11 +1,11 @@
 <?php
 if (isset($_GET['update']) && !empty($_GET['update']))
 {
-	$toUpdate = $_GET['update'];
+	$toUpdate = ucfirst($_GET['update']);
 	if (file_exists(CONTROLLER.DS.$toUpdate.'Controller.php') && file_exists(MODEL.DS.$toUpdate.'.php'))
 	{
-		$modelName = ucfirst($toUpdate);
-		$controllerName = ucfirst($toUpdate).'Controller';
+		$modelName = $toUpdate;
+		$controllerName = $toUpdate.'Controller';
 		$model = new $modelName();
 		$controller = new $controllerName();
 
