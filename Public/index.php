@@ -30,7 +30,7 @@ require_once 'Autoload.php';
 		<meta property="og:image" content="http://equitationledermann.com/img/alexandra_saut.png" />
 
 		<link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css" media="all" />
-		<link rel="stylesheet" href="./css/style.min.css" type="text/css">
+		<link rel="stylesheet" href="./css/style.css" type="text/css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" type="text/css">
 
 		<title>Ecole d'Equitation Ledermann - Evreux</title>
@@ -326,8 +326,8 @@ require_once 'Autoload.php';
 			</div>
 
 			<div class="row">
-				<div class="col-xs-1 col-sm-2 col-md-1 col-lg-2"></div>
-				<div class="col-xs-10 col-sm-10 col-md-4 col-lg-4">
+				<div class="col-xs-0 col-sm-2 col-md-1 col-lg-2"></div>
+				<div class="col-xs-12 col-sm-10 col-md-4 col-lg-4">
 					<?= Tarif::getTxtBlock(1); ?>
 					<!-- <ul class="tarif_ul">
 						<li>Leçons et balades à partir de : <br><span class="bold">22 € / l'heure</span> (tarif adhérent)<br>
@@ -336,8 +336,8 @@ require_once 'Autoload.php';
 						<li>Coaching CSO personnalisé avec <br><span class="bold">Jean-Pierre ou Alexandra Ledermann</span> :<br> nous consulter</li>
 					</ul> -->
 				</div>
-				<div class="col-xs-2 col-sm-2 hidden-md"></div>
-				<div class="col-xs-10 col-sm-10 col-md-6 col-lg-6">
+				<div class="col-xs-0 col-sm-2 hidden-md"></div>
+				<div class="col-xs-12 col-sm-10 col-md-6 col-lg-6">
 					<img src="./img/cheval_bisou.png" alt="Bisous de cheval" class="img-responsive" />
 				</div>
 			</div>

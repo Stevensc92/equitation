@@ -148,7 +148,7 @@ body
 
 .sub-title
 {
-	font-size: 0.8em;
+	font-size: 1em;
 	margin-bottom: 40px;
 	opacity: 0.8;
 }
@@ -296,6 +296,11 @@ body
 		width: 15px;
 	}
 
+	#school .title-section .sub-title
+	{
+		font-size: 1em;
+	}
+
 	#evreux .maps
 	{
 		width: 350px;
@@ -371,6 +376,11 @@ body
 	#school div.img-center:nth-child(2) > .img-mobile
 	{
 		margin-top: -30px;
+	}
+
+    #school > .title-section > .sub-title
+	{
+		font-size: 1.1em;
 	}
 
 	#famille div.img-center:nth-child(2) > .img-mobile

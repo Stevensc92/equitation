@@ -1,6 +1,8 @@
 <?php
-function __autoload($name)
+function autoloader($name)
 {
+	$name = strtolower($name);
+	
 	if (file_exists(INC.DS.$name.'.php'))
 		require_once INC.DS.$name.'.php';
 

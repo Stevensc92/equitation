@@ -5,8 +5,9 @@ session_start();
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-define('ROOT', dirname(__FILE__));
-define('DS',   DIRECTORY_SEPARATOR);
+define('ROOT', 	dirname(__FILE__));
+define('DS',   	DIRECTORY_SEPARATOR);
+define('PUB', 	dirname(dirname(__FILE__)).DS.'Public');
 
 define('INC', 		ROOT.DS.'inc');
 define('CONFIG', 	ROOT.DS.'config');
@@ -21,7 +22,7 @@ require_once MODEL.DS.'AppModel.php';
 
 require_once 'Autoload.php';
 
-// spl_autoload_register('Autoloader');
+spl_autoload_register('autoloader');
 
 
 // Content of each/current page
