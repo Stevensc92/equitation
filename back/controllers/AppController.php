@@ -4,6 +4,7 @@ class AppController
 {
     public $nameField = [
         'title'         => 'Titre de la section',
+        'sub_title'     => 'Sous-titre',
         'txt_block_1'   => 'Contenu du premier bloc de texte',
         'txt_block_2'   => 'Contenu du deuxième bloc de texte',
         'txt_block_3'   => 'Contenu du troisième bloc de texte',

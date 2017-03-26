@@ -51,6 +51,16 @@ class AppModel
 		$sql = "SELECT title FROM $table";
 		return $bdd->query($sql)->fetch()->title;
 	}
+
+    public static function getSubTitle()
+    {
+        global $bdd;
+
+        $table = 'content_'.strtolower(get_called_class());
+
+        $sql = "SELECT sub_title FROM $table";
+        return $bdd->query($sql)->fetch()->sub_title;
+    }
 }
 
 ?>

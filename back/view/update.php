@@ -4,7 +4,21 @@ $page->contenu = $page->getContent();
 ?>
 <div id="page-wrapper">
 	<div class="container-fluid">
-		<h2>Modification de la section <span class="txt_special"><?= $page->getTitle(); ?></span></h2>
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="page-header">Modification de la section
+					<span class="txt_special"><?= $page->getTitle(); ?></span>
+				</h1>
+
+				<ol class="breadcrumb">
+					<li><i class="fa fa-dashboard fa-fw"></i> <a href="./">Dashboard</a></li>
+					<li><i class="fa fa-cog fa-fw"></i> <a href="./">Modification</a></li>
+					<li class="active">
+						<?= ucfirst($_GET['update']); ?>
+					</li>
+				</ol>
+			</div>
+		</div>
 		<?php if(isset($message)) : ?>
 		<div class="alert alert-<?= $message->type; ?>">
 			<p><?= $message->content; ?></p>

@@ -16,7 +16,7 @@ require_once CONFIG.DS.'database.php';
 require_once INC.DS.'sql.php';
 require_once MODEL.DS.'AppModel.php';
 
-require_once 'Autoload.php';
+require_once 'autoload.php';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -80,7 +80,7 @@ require_once 'Autoload.php';
 			<div class="row">
 				<div class="title-section">
 					<h1 class="title"><?= School::getTitle() ?></h1>
-					<div class="sub-title">De la balade en forêt au plus haut niveau de compétition</div>
+					<div class="sub-title"><?= School::getSubTitle(); ?></div>
 				</div>
 
 				<div class="col-xs-12 col-sm-12 col-md-2 img-center">
@@ -150,7 +150,7 @@ require_once 'Autoload.php';
 			<div class="row">
 				<div class="title-section">
 					<h3 class="title"><?= Philosophie::getTitle(); ?></h3>
-					<div class="sub-title">Sérieux et professionel</div>
+					<div class="sub-title"><?= Philosophie::getSubTitle(); ?></div>
 				</div>
 			</div>
 
@@ -265,51 +265,53 @@ require_once 'Autoload.php';
 				</div>
 			</div>
 
-			<div class="row col-md-4 col-lg-4">
-				<div class="col-xs-12 col-sm-12 img-center">
-					<img
-						class="img-mobile"
-						src="./img/terrain_obstacle.png"
-						alt="Terrain d'obstacle"
-					/>
+			<div class="row row-container">
+				<div class="row col-md-4 col-lg-4">
+					<div class="col-xs-12 col-sm-12 img-center">
+						<img
+							class="img-mobile"
+							src="./img/terrain_obstacle.png"
+							alt="Terrain d'obstacle"
+						/>
+					</div>
+
+					<div class="col-xs-12 col-sm-12">
+						<p class="img-text">
+							<?= Service::getTxtBlock(1); ?>
+						</p>
+					</div>
 				</div>
 
-				<div class="col-xs-12 col-sm-12">
-					<p class="img-text">
-						<?= Service::getTxtBlock(1); ?>
-					</p>
-				</div>
-			</div>
+				<div class="row col-md-4 col-lg-4">
+					<div class="col-xs-12 col-sm-12 img-center">
+						<img
+							class="img-mobile"
+							src="./img/terrain_obstacle_2.png"
+							alt="Terrain d'obstacle"
+						/>
+					</div>
 
-			<div class="row col-md-4 col-lg-4">
-				<div class="col-xs-12 col-sm-12 img-center">
-					<img
-						class="img-mobile"
-						src="./img/terrain_obstacle_2.png"
-						alt="Terrain d'obstacle"
-					/>
-				</div>
-
-				<div class="col-xs-12 col-sm-12">
-					<p class="img-text">
-						<?= Service::getTxtBlock(2); ?>
-					</p>
-				</div>
-			</div>
-
-			<div class="row col-md-4 col-lg-4">
-				<div class="col-xs-12 col-sm-12 img-center">
-					<img
-						class="img-mobile"
-						src="./img/ecurie_cheval.png"
-						alt="Cheval dans une écurie"
-					/>
+					<div class="col-xs-12 col-sm-12">
+						<p class="img-text">
+							<?= Service::getTxtBlock(2); ?>
+						</p>
+					</div>
 				</div>
 
-				<div class="col-xs-12 col-sm-12">
-					<p class="img-text">
-						<?= Service::getTxtBlock(3); ?>
-					</p>
+				<div class="row col-md-4 col-lg-4">
+					<div class="col-xs-12 col-sm-12 img-center">
+						<img
+							class="img-mobile"
+							src="./img/ecurie_cheval.png"
+							alt="Cheval dans une écurie"
+						/>
+					</div>
+
+					<div class="col-xs-12 col-sm-12">
+						<p class="img-text">
+							<?= Service::getTxtBlock(3); ?>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
