@@ -52,7 +52,10 @@ require_once 'autoload.php';
 					<img src="./img/logo.png" id="header-logo" alt="Logo de l'école"/>
 				</a>
 			</div>
-
+			<!-- TODO : Modifier la police;
+				 Fixer le button toggle;
+				 "Couper" la nav et fixer à droite
+			 -->
 			<div class="collapse navbar-collapse" id="navbar-menu">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#famille" class="ancre">L'histoire</a></li>
@@ -126,13 +129,13 @@ require_once 'autoload.php';
 			</div>
 
 			<div class="row">
-				<div class="col-xs-4 col-sm-4 col-md-4 img-center">
+				<div class="col-xs-4 col-xs-push-2 col-sm-4 col-sm-push-0 col-md-4 col-md-push-0 img-center">
 					<img src="./img/grand_pere_cheval.jpg" class="img-mobile" alt="Grand père sur un cheval"/>
 				</div>
-				<div class="col-xs-4 col-sm-4 col-md-4 img-center">
+				<div class="hidden-xs col-sm-4 col-md-4 img-center">
 					<img src="./img/saut_obstacle.jpg" class="img-mobile" alt="Saut d'obstacle" />
 				</div>
-				<div class="col-xs-4 col-sm-4 col-md-4 img-center">
+				<div class="col-xs-4 col-xs-push-2 col-sm-4 col-sm-push-0 col-md-4 col-md-push-0 img-center">
 					<img src="./img/alexandra_celebration.jpg" class="img-mobile" alt="Alexandra Ledermann" />
 				</div>
 			</div>
@@ -142,6 +145,11 @@ require_once 'autoload.php';
 					<p class="img-text">
 						<?= Famille::getTxtBlock(1); ?>
 					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 img-center visible-xs">
+					<img src="./img/saut_obstacle.jpg" class="img-mobile paysage-solo-xxs" alt="Saut d'obstacle" />
 				</div>
 			</div>
 		</div>
@@ -326,17 +334,10 @@ require_once 'autoload.php';
 					<h3 class="title"><?= Tarif::getTitle(); ?></h3>
 				</div>
 			</div>
-
 			<div class="row">
 				<div class="col-xs-0 col-sm-2 col-md-1 col-lg-2"></div>
 				<div class="col-xs-12 col-sm-10 col-md-4 col-lg-4">
 					<?= Tarif::getTxtBlock(1); ?>
-					<!-- <ul class="tarif_ul">
-						<li>Leçons et balades à partir de : <br><span class="bold">22 € / l'heure</span> (tarif adhérent)<br>
-						<span class="bold">36 € / l'heure</span> (tarif non adhérent) </li>
-						<li>Pensions à partir de : <br><span class="bold">590 € / mois</span></li>
-						<li>Coaching CSO personnalisé avec <br><span class="bold">Jean-Pierre ou Alexandra Ledermann</span> :<br> nous consulter</li>
-					</ul> -->
 				</div>
 				<div class="col-xs-0 col-sm-2 hidden-md"></div>
 				<div class="col-xs-12 col-sm-10 col-md-6 col-lg-6">
@@ -373,11 +374,11 @@ require_once 'autoload.php';
 						<span class="localisation">
 							<img src="./img/icone_localisation.png" alt="Localisation" /> <span class="txt"><?= Evreux::getAddress(); ?></span>
 						</span>
-						<span class="mail">
+						<span class="clearfix mail">
 							<i class="fa fa-envelope-o" aria-hidden="true"></i>
 							<span class="txt">&nbsp;<a href="mailto:ecurieledermann@alicepro.fr"><?= Evreux::getEmail(); ?></a></span>
 						</span>
-						<span class="number">
+						<span class="clearfix number">
 							<img src="./img/icone_tel.png" alt="Telephone" />
 							<span class="txt">Tél : <a href="tel:0227341742"><?= Evreux::getTel(); ?></a></span>
 						</span>
