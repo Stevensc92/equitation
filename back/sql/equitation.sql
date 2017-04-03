@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.4
--- https://www.phpmyadmin.net/
+-- version 4.5.4.1
+-- http://www.phpmyadmin.net
 --
--- Client :  127.0.0.1
--- Généré le :  Lun 20 Mars 2017 à 19:30
--- Version du serveur :  5.7.14
--- Version de PHP :  5.6.25
+-- Client :  localhost
+-- Généré le :  Lun 03 Avril 2017 à 23:15
+-- Version du serveur :  5.7.11
+-- Version de PHP :  5.6.18
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -39,7 +39,7 @@ CREATE TABLE `content_evreux` (
 --
 
 INSERT INTO `content_evreux` (`title`, `txt_distance`, `txt_address`, `txt_mail`, `txt_number`) VALUES
-('Contact et localisation', 'A 5 mn d\'Evreux\r\n30 mn de Rouen\r\n50 mn de Paris Porte Maillot\r\n', '2 Rue de Fauville\n27930 HUEST', 'ecurieledermann@alicepro.fr', '02 27 34 17 42');
+('Contact et localisation', 'A 5 mn d\'Evreux\r\n30 mn de Rouen\r\n50 mn de Paris Porte Maillot\r\n\r\nDe Paris : A13 Sortie 15 « Bonnières-Evreux » puis suivre Rouen et sortir à Fauville\r\nDe Rouen/Caen : A13 sortie Louviers puis sortie Evreux-Nétreville\r\nDe Dreux/Chartres : N12 Evreux puis suivre Rouen et sortir à Fauville', '2 Rue de Fauville\r\n27930 HUEST', 'equitationledermann@orange.fr', '02 27 34 17 42');
 
 -- --------------------------------------------------------
 
@@ -57,7 +57,7 @@ CREATE TABLE `content_famille` (
 --
 
 INSERT INTO `content_famille` (`title`, `txt_block_1`) VALUES
-('L\'Histoire', 'Près de 50 ans séparent ces images, du grand-père Albert pionnier des centres équestres en France,\r\nà la médaillée	olympique Alexandra en passant par\r\nson père Jean-Pierre, cavalier de CSO émérite\r\net fondateur en 1966 de l\'Ecole d\'Equitation Ledermann à Huest.');
+('L\'Histoire', 'Près de 50 ans séparent ces images, du\r\ngrand-père Albert pionnier des centres\r\néquestres en France, à la médaillée\r\nolympique Alexandra en passant par\r\nson père Jean-Pierre, cavalier de CSO\r\némérite et fondateur en 1966 de l\'Ecole\r\nd\'Equitation Ledermann à Huest près d\'Evreux.');
 
 -- --------------------------------------------------------
 
@@ -75,7 +75,7 @@ CREATE TABLE `content_installation` (
 --
 
 INSERT INTO `content_installation` (`title`, `txt_block_1`) VALUES
-('Les installations', 'L\'Ecole d\'Equitation Ledermann dispose d\'une quarantaine de boxes, d\'un\r\nmanège couvert, de plusieurs paddocks et de 2 carrières dont une éclairée et\r\nun vaste spring-garden aux abords de la forêt\r\ncomprenant un terrain en herbe et un parcours de cross.');
+('Les installations', 'L\'Ecole d\'Equitation Ledermann dispose d\'une quarantaine de boxes, d\'un\r\nmanège couvert, de plusieurs paddocks et de 2 carrières dont une éclairée et\r\nun vaste spring-garden aux abords de la forêt comprenant un terrain en herbe et un parcours de cross.');
 
 -- --------------------------------------------------------
 
@@ -85,6 +85,7 @@ INSERT INTO `content_installation` (`title`, `txt_block_1`) VALUES
 
 CREATE TABLE `content_philosophie` (
   `title` varchar(255) NOT NULL,
+  `sub_title` varchar(255) NOT NULL,
   `txt_block_1` text NOT NULL,
   `txt_block_2` text NOT NULL,
   `txt_block_3` text NOT NULL
@@ -94,8 +95,8 @@ CREATE TABLE `content_philosophie` (
 -- Contenu de la table `content_philosophie`
 --
 
-INSERT INTO `content_philosophie` (`title`, `txt_block_1`, `txt_block_2`, `txt_block_3`) VALUES
-('Notre philosophie', 'Nous proposons à tous un enseignement à la fois classique et attractif qui \r\npermet de monter en toute sécurité et avec plaisir aussi bien en promenade\r\nqu’en compétition.', 'Nos priorités : la mise en confiance du cavalier et le respect du cheval.\r\nNos buts : instaurer entre vous et le cheval une relation basée sur\r\nla confiance, la complicité et le plaisir partagé.', 'Venez nous voir, nous nous ferons un plaisir de vous faire découvrir ce que\r\nnous pratiquons et enseignons depuis 50 ans.');
+INSERT INTO `content_philosophie` (`title`, `sub_title`, `txt_block_1`, `txt_block_2`, `txt_block_3`) VALUES
+('Notre philosophie', '', 'Nous proposons à tous un enseignement à la fois classique\r\net attractif qui permet de monter en toute sécurité et avec plaisir aussi bien en promenade\r\nqu’en compétition.', 'Nos priorités : la mise en confiance du cavalier et le respect du cheval.\r\nNos buts : instaurer entre vous et le cheval une relation basée sur\r\nla confiance, la complicité et le plaisir partagé.', 'Venez nous voir, nous nous ferons un plaisir de vous faire découvrir ce que nous pratiquons et enseignons depuis 50 ans.');
 
 -- --------------------------------------------------------
 
@@ -105,6 +106,7 @@ INSERT INTO `content_philosophie` (`title`, `txt_block_1`, `txt_block_2`, `txt_b
 
 CREATE TABLE `content_school` (
   `title` varchar(255) NOT NULL,
+  `sub_title` varchar(255) NOT NULL,
   `txt_block_1` text NOT NULL,
   `txt_block_2` text NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
@@ -113,8 +115,8 @@ CREATE TABLE `content_school` (
 -- Contenu de la table `content_school`
 --
 
-INSERT INTO `content_school` (`title`, `txt_block_1`, `txt_block_2`) VALUES
-('L\'Ecole d\'Equitation Ledermann', 'Que vous souhaitiez découvrir les joies de\r\nl\'Equitation en toute sécurité, aller plus loin\r\ndans la connaissance du cheval, ou encore\r\naméliorer vos performances en compétition,\r\nvous trouverez un accompagnement\r\npersonnalisé de qualité qui saura\r\nrépondre à vos attentes.', 'L\'Ecole d\'Equitation Ledermann\r\na formé plusieurs champions,\r\nnotamment Alexandra Ledermann,\r\nmédaille de bronze en individuel aux\r\nJeux Olympiques d\'Atlanta et 1ère femme\r\nChampionne d\'Europe de Saut d\'Obstacles.');
+INSERT INTO `content_school` (`title`, `sub_title`, `txt_block_1`, `txt_block_2`) VALUES
+('L\'Ecole d\'Equitation Ledermann', 'De la balade en forêt au plus haut niveau de compétition', 'Que vous souhaitiez découvrir les joies\r\nde l\'équitation en toute sécurité,\r\naller plus loin dans la connaissance du cheval, ou encore améliorer vos performances en compétition,\r\nvous trouverez un accompagnement\r\npersonnalisé de qualité qui saura\r\nrépondre à vos attentes.', 'L\'Ecole d\'Equitation Ledermann situé\r\nà Huest près d\'Evreux en Normandie\r\na formé plusieurs champions,\r\nnotamment Alexandra Ledermann,\r\nmédaille de bronze en individuel aux\r\nJeux Olympiques d\'Atlanta et 1ère\r\nfemme Championne d\'Europe de Saut d\'Obstacles.');
 
 -- --------------------------------------------------------
 
@@ -134,7 +136,7 @@ CREATE TABLE `content_service` (
 --
 
 INSERT INTO `content_service` (`title`, `txt_block_1`, `txt_block_2`, `txt_block_3`) VALUES
-('Les services', '<span class="bold">Cours d\'Equitation du débutant au confirmé à partir de 8 ans</span>\r\n\r\n<span class="bold">Promenades</span>', '<span class="bold">Travail et sortie en concours de votre cheval</span>\r\n(Nationaux et Cycle Classique Jeunes Chevaux).\r\n\r\n<span class="bold">Coaching CSO personnalisé</span>\r\n', '<span class="bold">Pension pour votre cheval</span>\r\nde loisir ou de sport\r\n(à la carte selon vos besoins)\r\n\r\n<span class="bold">Débourrage du jeune cheval</span>');
+('Les services', '<span class="bold">Cours d\'Equitation du débutant au confirmé\r\nà partir de 8 ans</span>\r\n\r\n<span class="bold">Promenades</span>', '<span class="bold">Travail et sortie en concours de votre cheval</span>\r\n(Nationaux et Cycle Classique Jeunes Chevaux).\r\n\r\n<span class="bold">Coaching CSO personnalisé</span>\r\n', '<span class="bold">Pension pour votre cheval</span>\r\nde loisir ou de sport\r\n(à la carte selon vos besoins)\r\n\r\n<span class="bold">Débourrage du jeune cheval</span>');
 
 -- --------------------------------------------------------
 
@@ -152,7 +154,7 @@ CREATE TABLE `content_tarif` (
 --
 
 INSERT INTO `content_tarif` (`title`, `txt_block_1`) VALUES
-('Les tarifs', '<ul class="tarif_ul">\r\n<li>Leçons et balades à partir de :\r\n<span class="bold">22 € / l\'heure</span> (tarif adhérent)\r\n<span class="bold">36 € / l\'heure</span> (tarif non adhérent) </li>\r\n<li>Pensions à partir de :\r\n<span class="bold">590 € / mois</span></li>\r\n<li>Coaching CSO personnalisé avec\r\n<span class="bold">Jean-Pierre ou Alexandra Ledermann</span> :\r\nnous consulter</li>\r\n</ul>');
+('Les tarifs', '<ul class="tarif_ul">\r\n<li><span class="li-title">Leçons et balades à partir de :</span>\r\n\r\n<span class="bold">22 € / l\'heure</span>\r\n(tarif adhérent)\r\n<span class="bold">36 € / l\'heure</span>\r\n(tarif non adhérent) </li>\r\n<li><span class="li-title">Pensions à partir de :</span>\r\n\r\n<span class="bold">590 € / mois</span></li>\r\n<li>Coaching CSO personnalisé avec\r\n<span class="bold">Jean-Pierre \r\nou \r\nAlexandra Ledermann</span> :\r\nnous consulter</li>\r\n</ul>');
 
 -- --------------------------------------------------------
 
