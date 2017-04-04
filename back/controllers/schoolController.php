@@ -1,15 +1,11 @@
 <?php
 class SchoolController extends AppController
 {
-	public function submitForm($data)
+    public function __construct()
 	{
-		foreach ($data as $key => $value)
-		{
-			if (empty($value) && $key !== 'updateForm')
-				return false;
-		}
-
-		return true;
+		$this->setUnsetField([
+			'updateForm'
+		]);
 	}
 }
 ?>

@@ -7,11 +7,13 @@ if (isset($_GET['update']) && !empty($_GET['update']))
 		$modelName = $toUpdate;
 		$controllerName = $toUpdate.'Controller';
 		$model = new $modelName();
-		$controller = new $controllerName();
+		$controller = new $controllerName($model);
 
 		if (isset($_POST['updateForm']))
 		{
-			if (!$controller->submitForm($_POST))
+			$unsetField = $controller->getUnsetField();
+
+			if (!$controller->emptyForm($_POST, $unsetField))
 			{
 				$message = new Object();
 				$message->type = 'danger';

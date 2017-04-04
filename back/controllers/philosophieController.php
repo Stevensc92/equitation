@@ -1,15 +1,13 @@
 <?php
 class PhilosophieController extends AppController
 {
-	public function submitForm($data)
+    public function __construct()
 	{
-		foreach ($data as $key => $value)
-		{
-			if (empty($value) && $key !== 'updateForm')
-				return false;
-		}
-
-		return true;
+		// Set except field to verif for empty
+		$this->setUnsetField([
+			'updateForm',
+			'sub_title'
+		]);
 	}
 }
 ?>
