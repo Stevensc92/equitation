@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.4.1
--- http://www.phpmyadmin.net
+-- version 4.6.4
+-- https://www.phpmyadmin.net/
 --
--- Client :  localhost
--- Généré le :  Lun 03 Avril 2017 à 23:15
--- Version du serveur :  5.7.11
--- Version de PHP :  5.6.18
+-- Client :  127.0.0.1
+-- Généré le :  Mar 04 Avril 2017 à 21:29
+-- Version du serveur :  5.7.14
+-- Version de PHP :  5.6.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -57,7 +57,7 @@ CREATE TABLE `content_famille` (
 --
 
 INSERT INTO `content_famille` (`title`, `txt_block_1`) VALUES
-('L\'Histoire', 'Près de 50 ans séparent ces images, du\r\ngrand-père Albert pionnier des centres\r\néquestres en France, à la médaillée\r\nolympique Alexandra en passant par\r\nson père Jean-Pierre, cavalier de CSO\r\némérite et fondateur en 1966 de l\'Ecole\r\nd\'Equitation Ledermann à Huest près d\'Evreux.');
+('L\'Histoire', 'Près de 50 ans séparent ces images, du grand-père Albert pionnier des centres équestres en France,\r\nà la médaillée olympique Alexandra en passant par\r\nson père Jean-Pierre, cavalier de CSO émérite\r\net fondateur en 1966 de l\'Ecole d\'Equitation Ledermann à Huest près d\'Evreux.');
 
 -- --------------------------------------------------------
 
@@ -75,7 +75,7 @@ CREATE TABLE `content_installation` (
 --
 
 INSERT INTO `content_installation` (`title`, `txt_block_1`) VALUES
-('Les installations', 'L\'Ecole d\'Equitation Ledermann dispose d\'une quarantaine de boxes, d\'un\r\nmanège couvert, de plusieurs paddocks et de 2 carrières dont une éclairée et\r\nun vaste spring-garden aux abords de la forêt comprenant un terrain en herbe et un parcours de cross.');
+('Les installations', 'L\'Ecole d\'Equitation Ledermann dispose d\'une quarantaine de boxes, d\'un\r\nmanège couvert, de plusieurs paddocks et de 2 carrières dont une éclairée et\r\nun vaste spring-garden aux abords de la forêt \r\ncomprenant un terrain en herbe et un parcours de cross.');
 
 -- --------------------------------------------------------
 
@@ -96,7 +96,7 @@ CREATE TABLE `content_philosophie` (
 --
 
 INSERT INTO `content_philosophie` (`title`, `sub_title`, `txt_block_1`, `txt_block_2`, `txt_block_3`) VALUES
-('Notre philosophie', '', 'Nous proposons à tous un enseignement à la fois classique\r\net attractif qui permet de monter en toute sécurité et avec plaisir aussi bien en promenade\r\nqu’en compétition.', 'Nos priorités : la mise en confiance du cavalier et le respect du cheval.\r\nNos buts : instaurer entre vous et le cheval une relation basée sur\r\nla confiance, la complicité et le plaisir partagé.', 'Venez nous voir, nous nous ferons un plaisir de vous faire découvrir ce que nous pratiquons et enseignons depuis 50 ans.');
+('Notre philosophie', '', 'Nous proposons à tous un enseignement à la fois \r\nclassique et attractif qui permet de monter\r\nen toute sécurité et avec plaisir \r\naussi bien en promenade qu’en compétition.', 'Nos priorités : la mise en confiance du cavalier\r\net le respect du cheval.\r\nNos buts : instaurer entre vous et le cheval une relation\r\nbasée sur la confiance, la complicité et le plaisir partagé.', 'Venez nous voir, nous nous ferons un plaisir \r\nde vous faire découvrir \r\nce que nous pratiquons et enseignons depuis 50 ans.');
 
 -- --------------------------------------------------------
 
@@ -177,6 +177,17 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `access`) VALUES
 (1, 'test', 'test@gmail.com', '$2y$10$QHt1iEJtXQYsciourPMta.QjU5d91Cyy5wBzeZDT37PlKf66hU9tO', 1);
 
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `user_group`
+--
+
+CREATE TABLE `user_group` (
+  `id` int(11) NOT NULL,
+  `name` varchar(65) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
 --
 -- Index pour les tables exportées
 --
@@ -227,7 +238,16 @@ ALTER TABLE `content_tarif`
 -- Index pour la table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `access_2` (`access`),
+  ADD KEY `access` (`access`);
+
+--
+-- Index pour la table `user_group`
+--
+ALTER TABLE `user_group`
+  ADD UNIQUE KEY `id` (`id`),
+  ADD KEY `id_2` (`id`);
 
 --
 -- AUTO_INCREMENT pour les tables exportées
@@ -238,6 +258,11 @@ ALTER TABLE `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT pour la table `user_group`
+--
+ALTER TABLE `user_group`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
