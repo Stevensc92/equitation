@@ -52,10 +52,6 @@ require_once 'autoload.php';
 					<img src="./img/logo.png" id="header-logo" alt="Logo de l'école"/>
 				</a>
 			</div>
-			<!-- TODO : Modifier la police;
-				 Fixer le button toggle;
-				 "Couper" la nav et fixer à droite
-			 -->
 			<div class="collapse navbar-collapse" id="navbar-menu">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="#famille" class="ancre">L'histoire</a></li>
@@ -172,7 +168,7 @@ require_once 'autoload.php';
 				</div>
 
 				<div class="col-xs-12 col-sm-12">
-					<p class="img-text" style="font-size:14px;">
+					<p class="img-text">
 						<?= Philosophie::getTxtBlock(1); ?>
 					</p>
 				</div>
