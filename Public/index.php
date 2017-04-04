@@ -40,7 +40,7 @@ require_once 'autoload.php';
 
 	<!-- == HEADER == -->
 	<nav id="header" class="navbar navbar-default navbar-static-top">
-		<div class="container-fluid">
+		<div class="container-fluid" id="menu-test">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu" aria-expanded="false">
 					<span class="sr-only">Toggle navigation</span>
@@ -129,13 +129,13 @@ require_once 'autoload.php';
 			</div>
 
 			<div class="row">
-				<div class="col-xs-4 col-xs-push-2 col-sm-4 col-sm-push-0 col-md-4 col-md-push-0 img-center">
+				<div class="col-xs-5 col-xs-push-1 col-sm-4 col-sm-push-0 col-md-4 col-md-push-0 img-center">
 					<img src="./img/grand_pere_cheval.jpg" class="img-mobile" alt="Grand père sur un cheval"/>
 				</div>
 				<div class="hidden-xs col-sm-4 col-md-4 img-center">
 					<img src="./img/saut_obstacle.jpg" class="img-mobile" alt="Saut d'obstacle" />
 				</div>
-				<div class="col-xs-4 col-xs-push-2 col-sm-4 col-sm-push-0 col-md-4 col-md-push-0 img-center">
+				<div class="col-xs-5 col-xs-push-1 col-sm-4 col-sm-push-0 col-md-4 col-md-push-0 img-center">
 					<img src="./img/alexandra_celebration.jpg" class="img-mobile" alt="Alexandra Ledermann" />
 				</div>
 			</div>
@@ -172,7 +172,7 @@ require_once 'autoload.php';
 				</div>
 
 				<div class="col-xs-12 col-sm-12">
-					<p class="img-text">
+					<p class="img-text" style="font-size:14px;">
 						<?= Philosophie::getTxtBlock(1); ?>
 					</p>
 				</div>

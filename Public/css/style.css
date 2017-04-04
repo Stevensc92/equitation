@@ -126,6 +126,22 @@ body
     height: 40px;
 }
 
+#menu-test.floatable {
+	position: fixed;
+	right: 0;
+	width: 80px;
+}
+
+.invisible
+{
+	display: none;
+}
+
+.navbar-collapse.collapse.in
+{
+	background-color: #2e2c2e;
+}
+
 /***************\
  * S C H O O L *
 \***************/
@@ -276,7 +292,7 @@ body
 
 .sub_maps
 {
-    width: 660px;
+    width: 100%;
     display: inline-flex;
     justify-content: space-between;
     margin-left: -40px;
@@ -351,6 +367,11 @@ body
 	{
 		width: 200px!important;
 	}
+
+	#school .title:before, #school .title:after
+	{
+		width: 5px;
+	}
 }
 
 @media (min-width: 1086px)
@@ -398,7 +419,7 @@ body
 	#famille div.img-center:nth-child(1) > .img-mobile,
 	#famille div.img-center:nth-child(3) > .img-mobile
 	{
-		width: 80px;
+		width: 100px;
 		margin-left: -2px;
 	}
 
@@ -421,13 +442,15 @@ body
     {
         margin-top: 5px;
     }
-}
 
-@media (max-width: 400px)
-{
-	#school .title:before, #school .title:after
+	.sub_maps
 	{
-		width: 5px;
+		margin-left: 0;
+	}
+
+	.paysage-solo-xxs
+	{
+		width: 200px!important;
 	}
 }
 
