@@ -8,7 +8,7 @@ function autoloader($name)
 		require_once MODEL.DS.$name.'.php';
 
 	if (file_exists(CONTROLLER.DS.$name.'.php'))
-		require_once CONTROLLER.DS.$name.'.php';
+		require_once CONTROLLER.DS.$name.'Controller.php';
 }
 
 

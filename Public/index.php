@@ -12,11 +12,14 @@ define('VIEW', 		ROOT.DS.'view');
 define('MODEL', 	ROOT.DS.'models');
 define('CONTROLLER',ROOT.DS.'controllers');
 
+echo CONTROLLER;
 require_once CONFIG.DS.'database.php';
 require_once INC.DS.'sql.php';
 require_once MODEL.DS.'AppModel.php';
 
 require_once 'autoload.php';
+
+spl_autoload_register('autoloader');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -150,7 +153,7 @@ require_once 'autoload.php';
 			</div>
 		</div>
 
-		<div id="philosophie">
+		<div id="philosophie" class="container">
 			<div class="row">
 				<div class="title-section">
 					<h3 class="title"><?= Philosophie::getTitle(); ?></h3>
