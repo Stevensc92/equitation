@@ -150,7 +150,7 @@ require_once 'autoload.php';
 			</div>
 		</div>
 
-		<div id="philosophie" class="container">
+		<div id="philosophie">
 			<div class="row">
 				<div class="title-section">
 					<h3 class="title"><?= Philosophie::getTitle(); ?></h3>
@@ -167,14 +167,14 @@ require_once 'autoload.php';
 					/>
 				</div>
 
-				<div class="col-xs-12 col-sm-12">
+				<div class="col-xs-12 col-sm-12 no-pad-h">
 					<p class="img-text">
 						<?= Philosophie::getTxtBlock(1); ?>
 					</p>
 				</div>
 			</div>
 
-			<div class="row col-md-4">
+			<div class="row col-md-4 no-pad-h">
 				<div class="col-xs-12 col-sm-12 img-center">
 					<img
 						class="img-mobile"
@@ -183,7 +183,7 @@ require_once 'autoload.php';
 					/>
 				</div>
 
-				<div class="col-xs-12 col-sm-12">
+				<div class="col-xs-12 col-sm-12 no-pad-h">
 					<p class="img-text">
 						<?= Philosophie::getTxtBlock(2); ?>
 					</p>
@@ -199,7 +199,7 @@ require_once 'autoload.php';
 					/>
 				</div>
 
-				<div class="col-xs-12 col-sm-12">
+				<div class="col-xs-12 col-sm-12 no-pad-h">
 					<p class="img-text">
 						<?= Philosophie::getTxtBlock(3); ?>
 					</p>

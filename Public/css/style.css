@@ -75,6 +75,12 @@ body
 	text-align: left;
 }
 
+.no-pad-h
+{
+	padding-left: 0;
+	padding-right: 0;
+}
+
 
 /***************\
  * H E A D E R *
@@ -160,7 +166,7 @@ body
 .title
 {
 	color: #fff;
-	font-size: 2.2em;
+	font-size: 2.6em;
 	font-family: 'MotionPicturePersonalUse';
 	margin-top: 20px;
 	margin-bottom: 10px;
@@ -329,10 +335,15 @@ body
 
 @media (max-width: 341px)
 {
-    .title
+    #school .title
     {
-        font-size: 2em;
+        font-size: 1.8em;
     }
+
+	.title:after, .title:before
+	{
+		width: 20px;
+	}
 }
 
 @media (max-width: 660px)
