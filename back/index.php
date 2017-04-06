@@ -20,7 +20,7 @@ require_once CONFIG.DS.'database.php';
 require_once INC.DS.'sql.php';
 require_once MODEL.DS.'AppModel.php';
 
-require_once 'Autoload.php';
+require_once 'autoload.php';
 
 spl_autoload_register('autoloader');
 

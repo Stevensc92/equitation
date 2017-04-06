@@ -12,11 +12,14 @@ define('VIEW', 		ROOT.DS.'view');
 define('MODEL', 	ROOT.DS.'models');
 define('CONTROLLER',ROOT.DS.'controllers');
 
+echo CONTROLLER;
 require_once CONFIG.DS.'database.php';
 require_once INC.DS.'sql.php';
 require_once MODEL.DS.'AppModel.php';
 
 require_once 'autoload.php';
+
+spl_autoload_register('autoloader');
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -167,7 +170,7 @@ require_once 'autoload.php';
 					/>
 				</div>
 
-				<div class="col-xs-12 col-sm-12">
+				<div class="col-xs-12 col-sm-12 no-pad-h">
 					<p class="img-text">
 						<?= Philosophie::getTxtBlock(1); ?>
 					</p>
@@ -199,7 +202,7 @@ require_once 'autoload.php';
 					/>
 				</div>
 
-				<div class="col-xs-12 col-sm-12">
+				<div class="col-xs-12 col-sm-12 no-pad-h">
 					<p class="img-text">
 						<?= Philosophie::getTxtBlock(3); ?>
 					</p>
