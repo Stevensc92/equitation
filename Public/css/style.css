@@ -41,7 +41,7 @@ body
 
 .img-mobile
 {
-	width: 100px;
+	width: 130px;
 	height: auto;
 	background-size: 100%;
 	margin: 10px;
@@ -77,8 +77,8 @@ body
 
 .no-pad-h
 {
-    padding-right: 0;
-    padding-left: 0;
+	padding-right: 0;
+	padding-left: 0;
 }
 
 
@@ -128,8 +128,8 @@ body
 
 .navbar-brand>img
 {
-    display: block;
-    height: 40px;
+	display: block;
+	height: 40px;
 }
 
 #menu-test.floatable {
@@ -297,10 +297,10 @@ body
 
 .sub_maps
 {
-    width: 100%;
-    display: inline-flex;
-    justify-content: space-between;
-    margin-left: -40px;
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-between;
+	margin-left: -40px;
 }
 
 /*.sub_maps .localisation,
@@ -334,15 +334,15 @@ body
 
 @media (max-width: 341px)
 {
-    #school .title
-    {
-        font-size: 1.8em;
-    }
-    
-    .title
-    {
-        font-size: 2.4em;
-    }
+	#school .title
+	{
+		font-size: 1.8em!important;
+	}
+
+	.title
+	{
+		font-size: 2.4em;
+	}
 
 	.title:after, .title:before
 	{
@@ -352,12 +352,12 @@ body
 
 @media (max-width: 660px)
 {
-    .sub_maps
-    {
+	.sub_maps
+	{
 		display: block;
-        width: 100%;
+		width: 100%;
 		margin-left: 0px;
-    }
+	}
 
 	.sub_maps span
 	{
@@ -373,14 +373,19 @@ body
 
 @media (max-width: 400px)
 {
-    #evreux .maps
-    {
-        width: 200px!important;
-    }
+	#evreux .maps
+	{
+		width: 200px!important;
+	}
 
 	.paysage-solo-xxs
 	{
 		width: 200px!important;
+	}
+
+	#school .title
+	{
+		font-size: 2.1em;
 	}
 
 	#school .title:before, #school .title:after
@@ -388,11 +393,11 @@ body
 		width: 5px;
 	}
 
-    .title:before, .title:after
-    {
-        width: 20px;
-        margin: 6px 10px;
-    }
+	.title:before, .title:after
+	{
+		width: 20px;
+		margin: 6px 10px;
+	}
 }
 
 @media (min-width: 1086px)
@@ -440,25 +445,25 @@ body
 		margin-left: -2px;
 	}
 
-    .navbar-toggle
-    {
-        margin-top: 13px;
-    }
+	.navbar-toggle
+	{
+		margin-top: 13px;
+	}
 
-    .navbar-brand
-    {
-        padding: 5px 15px;
-    }
+	.navbar-brand
+	{
+		padding: 5px 15px;
+	}
 
-    #header
-    {
-        min-height: 60px;
-    }
+	#header
+	{
+		min-height: 60px;
+	}
 
-    .navbar-brand>img
-    {
-        margin-top: 5px;
-    }
+	.navbar-brand>img
+	{
+		margin-top: 5px;
+	}
 
 	.sub_maps
 	{
@@ -478,7 +483,7 @@ body
 		display: block;
 		position: absolute;
 		right: 0;
-        top: -5px;
+		top: -5px;
 	}
 
 	.navbar-nav
@@ -497,7 +502,7 @@ body
 		height: auto;
 	}
 
-    #school > .title-section > .sub-title
+	#school > .title-section > .sub-title
 	{
 		font-size: 1.1em;
 	}
@@ -542,7 +547,7 @@ body
 
 	.img-mobile
 	{
-		width: 200px;
+		width: 240px;
 	}
 
 	.img-text
@@ -559,17 +564,23 @@ body
 
 	#famille div.img-center:nth-child(2) > .img-mobile
 	{
-		margin-top: 45px;
+		margin-top: 65px;
+		width: 300px;
 	}
 
 	#school .img-mobile
 	{
-		width: 125px;
+		width: 140px;
 	}
 
 	#school div.img-center:nth-child(2) > .img-mobile
 	{
 		margin-top: 0px;
+	}
+
+	#installation .img-mobile
+	{
+		width: 300px;
 	}
 }
 

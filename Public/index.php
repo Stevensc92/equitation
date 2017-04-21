@@ -12,7 +12,6 @@ define('VIEW', 		ROOT.DS.'view');
 define('MODEL', 	ROOT.DS.'models');
 define('CONTROLLER',ROOT.DS.'controllers');
 
-echo CONTROLLER;
 require_once CONFIG.DS.'database.php';
 require_once INC.DS.'sql.php';
 require_once MODEL.DS.'AppModel.php';
@@ -120,7 +119,7 @@ spl_autoload_register('autoloader');
 			<img src="./img/alexandra_saut.png" class="image-background" alt="Alexandra saute avec son cheval" />
 		</div>
 
-		<div id="famille" class="container">
+		<div id="famille" class="container no-pad-h">
 			<div class="row">
 				<div class="title-section">
 					<h3 class="title"><?= Famille::getTitle(); ?></h3>
@@ -139,7 +138,7 @@ spl_autoload_register('autoloader');
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="row no-pad-h">
 				<div class="col-xs-12 col-sm-12 col-md-12">
 					<p class="img-text">
 						<?= Famille::getTxtBlock(1); ?>
@@ -157,7 +156,9 @@ spl_autoload_register('autoloader');
 			<div class="row">
 				<div class="title-section">
 					<h3 class="title"><?= Philosophie::getTitle(); ?></h3>
-					<div class="sub-title"><?= Philosophie::getSubTitle(); ?></div>
+                    <?php if (Philosophie::getSubTitle() !== '') : ?>
+                    <div class="sub-title"><?= Philosophie::getSubTitle(); ?></div>
+                    <?php endif; ?>
 				</div>
 			</div>
 
@@ -362,7 +363,9 @@ spl_autoload_register('autoloader');
 				</div>
 
 				<div class="col-xs-12 col-sm-6 col-md-6 img-center">
-					<img src="./img/maps.jpg" class="img-mobile maps" alt="Localisation centre équitation Evreux" />
+					<a target="_blank" href="https://www.google.fr/maps/place/Ecole+d'Equitation+Ledermann/@49.0383173,1.2029559,17z/data=!4m13!1m7!3m6!1s0x47e138096bce83cd:0xfd9555fb3ee6647d!2s2+Rue+de+Fauville,+27930+Huest!3b1!8m2!3d49.0383173!4d1.2051446!3m4!1s0x0:0x1bd0e9b2437201a1!8m2!3d49.0385502!4d1.2052801?hl=fr">
+						<img src="./img/maps.jpg" class="img-mobile maps" alt="Localisation centre équitation Evreux" />
+					</a>
 				</div>
 			</div>
 
@@ -371,7 +374,12 @@ spl_autoload_register('autoloader');
 				<div class="col-xs-12 col-sm-10 col-md-6">
 					<div class="sub_maps">
 						<span class="localisation">
-							<img src="./img/icone_localisation.png" alt="Localisation" /> <span class="txt"><?= Evreux::getAddress(); ?></span>
+							<img src="./img/icone_localisation.png" alt="Localisation" />
+							<span class="txt">
+								<a target="_blank" href="https://www.google.fr/maps/place/Ecole+d'Equitation+Ledermann/@49.0383173,1.2029559,17z/data=!4m13!1m7!3m6!1s0x47e138096bce83cd:0xfd9555fb3ee6647d!2s2+Rue+de+Fauville,+27930+Huest!3b1!8m2!3d49.0383173!4d1.2051446!3m4!1s0x0:0x1bd0e9b2437201a1!8m2!3d49.0385502!4d1.2052801?hl=fr">
+									<?= Evreux::getAddress(); ?>
+								</a>
+							</span>
 						</span>
 						<span class="clearfix mail">
 							<i class="fa fa-envelope-o" aria-hidden="true"></i>
