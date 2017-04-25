@@ -361,10 +361,10 @@ spl_autoload_register('autoloader');
 						<?= Evreux::getDistance(); ?>
 					</div>
 				</div>
-
-				<div class="col-xs-12 col-sm-6 col-md-6 img-center">
+				<div class="col-md-1"></div>
+				<div class="col-xs-12 col-sm-6 col-md-6">
 					<a target="_blank" href="https://www.google.fr/maps/place/Ecole+d'Equitation+Ledermann/@49.0383173,1.2029559,17z/data=!4m13!1m7!3m6!1s0x47e138096bce83cd:0xfd9555fb3ee6647d!2s2+Rue+de+Fauville,+27930+Huest!3b1!8m2!3d49.0383173!4d1.2051446!3m4!1s0x0:0x1bd0e9b2437201a1!8m2!3d49.0385502!4d1.2052801?hl=fr">
-						<img src="./img/maps.jpg" class="img-mobile maps" alt="Localisation centre équitation Evreux" />
+						<img src="./img/map.jpg" class="img-mobile maps" alt="Localisation centre équitation Evreux" />
 					</a>
 				</div>
 			</div>
@@ -406,6 +406,12 @@ spl_autoload_register('autoloader');
 		  ga('create', 'UA-91585223-1', 'auto');
 		  ga('send', 'pageview');
 
+		</script>
+		<script type="text/javascript">
+		setTimeout(function(){var a=document.createElement("script");
+		var b=document.getElementsByTagName("script")[0];
+		a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0064/3741.js?"+Math.floor(new Date().getTime()/3600000);
+		a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
 		</script>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>

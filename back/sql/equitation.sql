@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 21 Avril 2017 à 01:09
+-- Généré le :  Mar 25 Avril 2017 à 16:31
 -- Version du serveur :  5.7.14
 -- Version de PHP :  7.0.10
 
@@ -39,7 +39,7 @@ CREATE TABLE `content_evreux` (
 --
 
 INSERT INTO `content_evreux` (`title`, `txt_distance`, `txt_address`, `txt_mail`, `txt_number`) VALUES
-('Contact et localisation', 'A 5 mn d\'Evreux\r\n30 mn de Rouen\r\n50 mn de Paris Porte Maillot\r\n\r\nDe Paris : A13 Sortie 15 « Bonnières-Evreux » puis suivre Rouen et sortir à Fauville\r\nDe Rouen/Caen : A13 sortie Louviers puis sortie Evreux-Nétreville\r\nDe Dreux/Chartres : N12 Evreux puis suivre Rouen et sortir à Fauville', '2 Rue de Fauville\r\n27930 HUEST', 'equitationledermann@orange.fr', '02 27 34 17 42');
+('Contact et localisation', 'A 5 mn d\'Evreux\r\n30 mn de Rouen\r\n50 mn de Paris Porte Maillot\r\n\r\n<span class="bold">De Paris</span> : A13 Sortie 15 « Bonnières-Evreux » puis suivre Rouen et sortir à Fauville\r\n<span class="bold">De Rouen/Caen</span> : A13 sortie Louviers puis sortie Evreux-Nétreville\r\n<span class="bold">De Dreux/Chartres</span> : N12 Evreux puis suivre Rouen et sortir à Fauville', '2 Rue de Fauville\r\n27930 HUEST', 'equitationledermann@orange.fr', '02 27 34 17 42');
 
 -- --------------------------------------------------------
 
@@ -75,7 +75,7 @@ CREATE TABLE `content_installation` (
 --
 
 INSERT INTO `content_installation` (`title`, `txt_block_1`) VALUES
-('Les installations', 'L\'Ecole d\'Equitation Ledermann dispose d\'une quarantaine de boxes, d\'un\r\nmanège couvert, de plusieurs paddocks et de 2 carrières dont une éclairée et\r\nun vaste spring-garden aux abords de la forêt \r\ncomprenant un terrain en herbe et un parcours de cross.');
+('Les installations', 'L\'Ecole d\'Equitation Ledermann dispose d\'une\r\nquarantaine de boxes, d\'un manège couvert,\r\nde plusieurs paddocks et de 2 carrières\r\ndont une éclairée et un vaste spring-garden\r\naux abords de la forêt comprenant\r\nun terrain en herbe et un parcours de cross.');
 
 -- --------------------------------------------------------
 
@@ -96,7 +96,7 @@ CREATE TABLE `content_philosophie` (
 --
 
 INSERT INTO `content_philosophie` (`title`, `sub_title`, `txt_block_1`, `txt_block_2`, `txt_block_3`) VALUES
-('Notre philosophie', '', 'Nous proposons à tous un enseignement à la fois \r\nclassique et attractif qui permet de monter\r\nen toute sécurité et avec plaisir \r\naussi bien en promenade qu’en compétition.', 'Nos priorités : la mise en confiance du cavalier\r\net le respect du cheval.\r\nNos buts : instaurer entre vous et le cheval une relation\r\nbasée sur la confiance, la complicité et le plaisir partagé.', 'Venez nous voir, nous nous ferons un plaisir \r\nde vous faire découvrir \r\nce que nous pratiquons et enseignons depuis 50 ans.');
+('Notre philosophie', '', 'Nous proposons à tous un enseignement à la fois \r\nclassique et attractif qui permet de monter\r\nen toute sécurité et avec plaisir \r\naussi bien en promenade qu’en compétition.', 'Nos priorités : la mise en confiance du cavalier\r\net le respect du cheval.\r\nNos buts : instaurer entre vous et le cheval une relation\r\nbasée sur la confiance, la complicité et le plaisir partagé.', 'Venez nous voir, nous nous ferons un plaisir \r\nde vous faire découvrir ce que \r\nnous pratiquons et enseignons depuis 50 ans.');
 
 -- --------------------------------------------------------
 
@@ -116,7 +116,7 @@ CREATE TABLE `content_school` (
 --
 
 INSERT INTO `content_school` (`title`, `sub_title`, `txt_block_1`, `txt_block_2`) VALUES
-('L\'Ecole d\'Equitation Ledermann', 'De la balade en forêt au plus haut niveau de compétition', 'Que vous souhaitiez découvrir les joies\r\nde l\'équitation en toute sécurité,\r\naller plus loin dans la connaissance du cheval, ou encore améliorer vos performances en compétition,\r\nvous trouverez un accompagnement\r\npersonnalisé de qualité qui saura\r\nrépondre à vos attentes.', 'L\'Ecole d\'Equitation Ledermann situé\r\nà Huest près d\'Evreux en Normandie\r\na formé plusieurs champions,\r\nnotamment Alexandra Ledermann,\r\nmédaille de bronze en individuel aux\r\nJeux Olympiques d\'Atlanta et 1ère\r\nfemme Championne d\'Europe de Saut d\'Obstacles.');
+('L\'Ecole d\'Equitation Ledermann', 'De la balade en forêt au plus haut niveau de compétition', 'Que vous souhaitiez découvrir les joies\r\nde l\'équitation en toute sécurité,\r\naller plus loin dans la connaissance du cheval, \r\nou encore améliorer vos performances\r\nen compétition, vous trouverez\r\nun accompagnement personnalisé de qualité \r\nqui saura répondre à vos attentes.', 'L\'Ecole d\'Equitation Ledermann située\r\nà Huest près d\'Evreux en Normandie\r\na formé plusieurs champions,\r\nnotamment Alexandra Ledermann,\r\nmédaille de bronze en individuel aux\r\nJeux Olympiques d\'Atlanta et 1ère\r\nfemme Championne d\'Europe\r\nde Saut d\'Obstacles.');
 
 -- --------------------------------------------------------
 
@@ -136,7 +136,7 @@ CREATE TABLE `content_service` (
 --
 
 INSERT INTO `content_service` (`title`, `txt_block_1`, `txt_block_2`, `txt_block_3`) VALUES
-('Les services', '<span class="bold">Cours d\'Equitation du débutant au confirmé\r\nà partir de 8 ans</span>\r\n\r\n<span class="bold">Promenades</span>', '<span class="bold">Travail et sortie en concours de votre cheval</span>\r\n(Nationaux et Cycle Classique Jeunes Chevaux).\r\n\r\n<span class="bold">Coaching CSO personnalisé</span>\r\n', '<span class="bold">Pension pour votre cheval</span>\r\nde loisir ou de sport\r\n(à la carte selon vos besoins)\r\n\r\n<span class="bold">Débourrage du jeune cheval</span>');
+('Les services', '<span class="bold">Cours d\'Equitation du débutant au\r\nconfirmé à partir de 8 ans</span>\r\n\r\n<span class="bold">Promenades</span>', '<span class="bold">Travail et sortie en concours \r\nde votre cheval</span>\r\n(Nationaux et Cycle Classique \r\nJeunes Chevaux)\r\n\r\n<span class="bold">Coaching CSO personnalisé</span>\r\n', '<span class="bold">Pension pour votre cheval</span>\r\nde loisir ou de sport\r\n(à la carte selon vos besoins)\r\n\r\n<span class="bold">Débourrage du jeune cheval</span>');
 
 -- --------------------------------------------------------
 
@@ -154,7 +154,7 @@ CREATE TABLE `content_tarif` (
 --
 
 INSERT INTO `content_tarif` (`title`, `txt_block_1`) VALUES
-('Les tarifs', '<ul class="tarif_ul">\r\n<li><span class="li-title">Leçons et balades à partir de :</span>\r\n\r\n<span class="bold">22 € / l\'heure</span>\r\n(tarif adhérent)\r\n<span class="bold">36 € / l\'heure</span>\r\n(tarif non adhérent) </li>\r\n<li><span class="li-title">Pensions à partir de :</span>\r\n\r\n<span class="bold">590 € / mois</span></li>\r\n<li>Coaching CSO personnalisé avec\r\n<span class="bold">Jean-Pierre \r\nou \r\nAlexandra Ledermann</span> :\r\nnous consulter</li>\r\n</ul>');
+('Les tarifs', '<ul class="tarif_ul">\n<li><span class="li-title">Leçons et balades à partir de :</span>\n\n<span class="bold">22 € / l\'heure</span>\n(tarif adhérent)\n<span class="bold">36 € / l\'heure</span>\n(tarif non adhérent) </li>\n<li><span class="li-title">Pensions à partir de :</span>\n\n<span class="bold">590 € / mois</span></li>\n<li>Coaching CSO personnalisé avec\n<span class="bold">Jean-Pierre</span> \nou \n<span class="bold">Alexandra Ledermann</span> :\nnous consulter</li>\n</ul>');
 
 -- --------------------------------------------------------
 

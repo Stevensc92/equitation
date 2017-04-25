@@ -252,12 +252,12 @@ body
 {
 	list-style: none;
 	text-transform: none;
-	font-size: 20px;
+	font-size: 14px;
 }
 
 .tarif_ul > li
 {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .tarif_ul > li .bold
@@ -267,7 +267,7 @@ body
 
 .tarif_ul .li-title
 {
-	font-size: 1.4em;
+	font-size: 20px;
 	text-align: justify;
 }
 
@@ -300,7 +300,8 @@ body
 	width: 100%;
 	display: inline-flex;
 	justify-content: space-between;
-	margin-left: -40px;
+	margin-left: -20px;
+    margin-top: 10px;
 }
 
 /*.sub_maps .localisation,
@@ -375,7 +376,7 @@ body
 {
 	#evreux .maps
 	{
-		width: 200px!important;
+		width: 300px!important;
 	}
 
 	.paysage-solo-xxs
@@ -558,8 +559,9 @@ body
 
 	#evreux .maps
 	{
-		width: 500px;
+		width: 580px;
 		height: auto;
+		margin-left: -10px;
 	}
 
 	#famille div.img-center:nth-child(2) > .img-mobile
@@ -570,7 +572,7 @@ body
 
 	#school .img-mobile
 	{
-		width: 140px;
+		width: 150px;
 	}
 
 	#school div.img-center:nth-child(2) > .img-mobile
@@ -582,6 +584,16 @@ body
 	{
 		width: 300px;
 	}
+
+    #philosophie .img-mobile
+    {
+        width: 300px;
+    }
+
+    #service .img-mobile
+    {
+        width: 290px;
+    }
 }
 
 
@@ -605,8 +617,8 @@ body
 
 	#evreux .maps
 	{
-		width: 679px;
-		height: 463px;
+		width: 700px;
+		height: auto;
 	}
 
 	.img-mobile
