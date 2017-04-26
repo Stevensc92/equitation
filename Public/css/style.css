@@ -267,7 +267,7 @@ body
 
 .tarif_ul .li-title
 {
-	font-size: 20px;
+	font-size: 18px;
 	text-align: justify;
 }
 
@@ -301,7 +301,7 @@ body
 	display: inline-flex;
 	justify-content: space-between;
 	margin-left: -20px;
-    margin-top: 10px;
+	margin-top: 10px;
 }
 
 /*.sub_maps .localisation,
@@ -369,6 +369,7 @@ body
 	.mail i
 	{
 		margin-left: 6px;
+		margin-top: 7px;
 	}
 }
 
@@ -376,7 +377,7 @@ body
 {
 	#evreux .maps
 	{
-		width: 300px!important;
+		width: 275px!important;
 	}
 
 	.paysage-solo-xxs
@@ -585,15 +586,15 @@ body
 		width: 300px;
 	}
 
-    #philosophie .img-mobile
-    {
-        width: 300px;
-    }
+	#philosophie .img-mobile
+	{
+		width: 300px;
+	}
 
-    #service .img-mobile
-    {
-        width: 290px;
-    }
+	#service .img-mobile
+	{
+		width: 290px;
+	}
 }
 
 
