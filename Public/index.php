@@ -125,7 +125,7 @@ spl_autoload_register('autoloader');
 					<h3 class="title"><?= Famille::getTitle(); ?></h3>
 				</div>
 			</div>
-
+			
 			<div class="row">
 				<div class="col-xs-5 col-xs-push-1 col-sm-4 col-sm-push-0 col-md-4 col-md-push-0 img-center">
 					<img src="./img/grand_pere_cheval.jpg" class="img-mobile" alt="Grand père sur un cheval"/>

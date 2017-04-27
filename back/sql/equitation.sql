@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Mar 25 Avril 2017 à 16:31
+-- Généré le :  Jeu 27 Avril 2017 à 00:27
 -- Version du serveur :  5.7.14
 -- Version de PHP :  7.0.10
 
@@ -39,7 +39,7 @@ CREATE TABLE `content_evreux` (
 --
 
 INSERT INTO `content_evreux` (`title`, `txt_distance`, `txt_address`, `txt_mail`, `txt_number`) VALUES
-('Contact et localisation', 'A 5 mn d\'Evreux\r\n30 mn de Rouen\r\n50 mn de Paris Porte Maillot\r\n\r\n<span class="bold">De Paris</span> : A13 Sortie 15 « Bonnières-Evreux » puis suivre Rouen et sortir à Fauville\r\n<span class="bold">De Rouen/Caen</span> : A13 sortie Louviers puis sortie Evreux-Nétreville\r\n<span class="bold">De Dreux/Chartres</span> : N12 Evreux puis suivre Rouen et sortir à Fauville', '2 Rue de Fauville\r\n27930 HUEST', 'equitationledermann@orange.fr', '02 27 34 17 42');
+('Contact et localisation', 'A 5 mn d\'Evreux\r\n30 mn de Rouen\r\n50 mn de Paris Porte Maillot\r\n\r\n<span class="bold">De Paris</span> : A13 Sortie 15 « Bonnières-Evreux » <span class="br-hidden"></span>puis suivre Rouen et sortir à Fauville\r\n<span class="bold">De Rouen/Caen</span> : A13 sortie Louviers <span class="br-hidden"></span>puis sortie Evreux-Nétreville\r\n<span class="bold">De Dreux/Chartres</span> : N12 Evreux <span class="br-hidden"></span>puis suivre Rouen et sortir à Fauville', '2 Rue de Fauville\r\n27930 HUEST', 'equitationledermann@orange.fr', '02 27 34 17 42');
 
 -- --------------------------------------------------------
 

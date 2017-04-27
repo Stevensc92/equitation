@@ -99,11 +99,6 @@ body
 	border: none;
 }
 
-.navbar-nav
-{
-	margin-right: 50px;
-}
-
 .navbar-default .navbar-collapse
 {
 	margin-top: 10px;
@@ -252,22 +247,22 @@ body
 {
 	list-style: none;
 	text-transform: none;
-	font-size: 14px;
+	/*font-size: 14px;*/
 }
 
 .tarif_ul > li
 {
-	font-size: 14px;
+	/*font-size: 14px;*/
 }
 
 .tarif_ul > li .bold
 {
-	font-size: 20px;
+	/*font-size: 20px;*/
 }
 
 .tarif_ul .li-title
 {
-	font-size: 18px;
+	/*font-size: 18px;*/
 	text-align: justify;
 }
 
@@ -402,6 +397,33 @@ body
 	}
 }
 
+@media (max-width: 350px)
+{
+    #school .title-section .sub-title
+    {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 160px;
+    }
+}
+
+@media (max-width: 499px)
+{
+	.br-hidden
+	{
+		display: block;
+	}
+}
+
+@media (min-width: 500px)
+{
+	.br-hidden
+	{
+		display: none;
+	}
+}
+
 @media (min-width: 1086px)
 {
 	.navbar-default .navbar-collapse
@@ -525,6 +547,7 @@ body
 	.navbar-nav
 	{
 		display: block;
+        margin-right: 50px;
 	}
 }
 
