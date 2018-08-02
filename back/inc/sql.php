@@ -2,7 +2,7 @@
 
 if(	empty(DB_HOST)
 	|| empty(DB_USER)
-	|| empty(DB_PASS)
+	// || empty(DB_PASS)
 	|| empty(DB_NAME)
 )
 	Error::fatal('Missing sql credentials');

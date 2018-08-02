@@ -1,4 +1,14 @@
 <?php
+
+/**
+ * Create a password, manipulation by a developper only
+ * Unquote the following line
+ */
+
+// $hash = password_hash('enterPasswordHere', PASSWORD_DEFAULT);
+// echo $hash;
+// exit;
+
 include TEMPLATES.DS.'header.php';
 
 if (isset($_POST['loginForm']))
@@ -20,6 +30,8 @@ if (isset($_POST['loginForm']))
 	else
 		$error = 'Identifiant incorrect';
 }
+
+
 
 include VIEW.DS.'login-form.php';
 
